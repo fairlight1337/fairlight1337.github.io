@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="287,5,449,35"/>
+<area shape="rect" id="node5" href="$class_c_c_r_t_p_packet.html#a7f69fd021d84553f6882f3c973fce93e" title="Gives out the pointer to the internally stored data." alt="" coords="297,59,439,88"/>
+<area shape="rect" id="node7" href="$class_c_c_r_t_p_packet.html#ae858fd5b801ead5123fde3fa65f4b993" title="Returns the length of the currently stored data (in bytes)" alt="" coords="277,112,459,141"/>
+<area shape="rect" id="node9" href="$class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="269,165,467,195"/>
+<area shape="rect" id="node11" href="$class_c_c_r_t_p_packet.html#a6f016d8169e8513bc31ba0a7f4f0b6f4" title="Returns the length of a sendable data block." alt="" coords="249,219,487,248"/>
+<area shape="rect" id="node13" href="$class_c_c_r_t_p_packet.html#aec6700a52ab8a83cb38447c98402b9e3" title="Set the copter channel to send the payload data to." alt="" coords="276,272,460,301"/>
+<area shape="rect" id="node15" href="$class_c_crazy_radio.html#aa42e0623b6b4de4f522e158723353ffa" title="Sets the internal count of the TOC variables available on the copter." alt="" coords="257,325,479,355"/>
+<area shape="rect" id="node17" href="$class_c_c_r_t_p_packet.html#a5be4f08603d3fc9f144afcbbce0e796c" title="Set the copter port to send the payload data to." alt="" coords="288,379,448,408"/>
+<area shape="rect" id="node19" href="$class_c_crazy_radio.html#ab1f13389b873821a0d5eaa4824b84837" title="Sets whether the class instance is currently waiting for a TOC parameter count update." alt="" coords="233,432,503,461"/>
+<area shape="rect" id="node21" href="$class_c_crazy_radio.html#a065a7c864767871066715b24bec77dd3" title="Denotes whether the class is currently updating the TOC parameter count." alt="" coords="243,485,493,515"/>
+</map>
