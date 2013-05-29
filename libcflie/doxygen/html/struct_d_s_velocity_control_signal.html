@@ -65,12 +65,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DSVelocityControlSignal Struct Reference</div>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="DSVelocityControlSignal" --><div class="dynheader">
+<!-- doxytag: class="DSVelocityControlSignal" -->
+<p>Struct holding a controller output signal.  
+ <a href="struct_d_s_velocity_control_signal.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_data_structures_8h_source.html">DataStructures.h</a>&gt;</code></p>
+<div class="dynheader">
 Collaboration diagram for DSVelocityControlSignal:</div>
 <div class="dyncontent">
 <div class="center"><img src="struct_d_s_velocity_control_signal__coll__graph.png" border="0" usemap="#_d_s_velocity_control_signal_coll__map" alt="Collaboration graph"/></div>
 <map name="_d_s_velocity_control_signal_coll__map" id="_d_s_velocity_control_signal_coll__map">
-<area shape="rect" id="node2" href="struct_d_s_orientation.html" title="DSOrientation" alt="" coords="36,5,140,35"/></map>
+<area shape="rect" id="node2" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="36,5,140,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="struct_d_s_velocity_control_signal-members.html">List of all members.</a></p>
@@ -82,7 +87,17 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>nThrust</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad44383eae47cfae3bac3aa872f509f32"></a><!-- doxytag: member="DSVelocityControlSignal::dsoAngular" ref="ad44383eae47cfae3bac3aa872f509f32" args="" -->
 struct <a class="el" href="struct_d_s_orientation.html">DSOrientation</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dsoAngular</b></td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Struct holding a controller output signal. </p>
+<p>As the copter internal controller takes fixed angles and a thrust value as input, the controllers in the client library generate the corresponding values and store it in this struct.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nThrust</td><td>The amount of thrust to give to the copter controller </td></tr>
+    <tr><td class="paramname">dsoAngular</td><td>The fixed angles to give to the copter controller </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/cflie/<a class="el" href="_data_structures_8h_source.html">DataStructures.h</a></li>
 </ul>
 </div>
@@ -91,7 +106,7 @@ struct <a class="el" href="struct_d_s_orientation.html">DSOrientation</a>&#160;<
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,7 +115,7 @@ struct <a class="el" href="struct_d_s_orientation.html">DSOrientation</a>&#160;<
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue May 28 2013 17:13:40 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

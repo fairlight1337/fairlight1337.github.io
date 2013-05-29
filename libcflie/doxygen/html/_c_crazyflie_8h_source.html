@@ -101,98 +101,101 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00040"></a>00040 <span class="keyword">using namespace </span>std;
 <a name="l00041"></a>00041 
 <a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="keyword">enum</span> Controller {
-<a name="l00044"></a>00044   CTRL_NONE = 0,
-<a name="l00045"></a>00045   CTRL_P = 1
-<a name="l00046"></a>00046 };
-<a name="l00047"></a>00047 
-<a name="l00053"></a><a class="code" href="class_c_crazyflie.html">00053</a> <span class="keyword">class </span><a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> {
-<a name="l00054"></a>00054  <span class="keyword">private</span>:
-<a name="l00055"></a>00055   <span class="comment">// Variables</span>
-<a name="l00058"></a><a class="code" href="class_c_crazyflie.html#accf3c2fc460d69bc46cd0b3d7f66e6dd">00058</a> <span class="comment"></span>  <a class="code" href="class_c_crazy_radio.html">CCrazyRadio</a> *<a class="code" href="class_c_crazyflie.html#accf3c2fc460d69bc46cd0b3d7f66e6dd">m_crRadio</a>;
-<a name="l00059"></a>00059   <span class="keywordtype">int</span> m_nLastRequestedVariableIndex;
-<a name="l00061"></a><a class="code" href="class_c_crazyflie.html#a34ca16e45e16b1ceb51033286ded0d6f">00061</a>   <span class="keywordtype">int</span> <a class="code" href="class_c_crazyflie.html#a34ca16e45e16b1ceb51033286ded0d6f">m_nThrust</a>;
-<a name="l00063"></a><a class="code" href="class_c_crazyflie.html#a38738aa391f86c69cb424d944f8e2870">00063</a>   <span class="keywordtype">float</span> <a class="code" href="class_c_crazyflie.html#a38738aa391f86c69cb424d944f8e2870">m_fRoll</a>;
-<a name="l00065"></a><a class="code" href="class_c_crazyflie.html#a190b3d549997889a0061293b16c0fd44">00065</a>   <span class="keywordtype">float</span> <a class="code" href="class_c_crazyflie.html#a190b3d549997889a0061293b16c0fd44">m_fPitch</a>;
-<a name="l00067"></a><a class="code" href="class_c_crazyflie.html#a6b02709a23c8d0955d8c40e804523b91">00067</a>   <span class="keywordtype">float</span> <a class="code" href="class_c_crazyflie.html#a6b02709a23c8d0955d8c40e804523b91">m_fYaw</a>;
-<a name="l00069"></a><a class="code" href="class_c_crazyflie.html#a906c410204fc1817f041785f944c33ad">00069</a>   <a class="code" href="class_c_controller.html">CController</a> *<a class="code" href="class_c_crazyflie.html#a906c410204fc1817f041785f944c33ad">m_ctrlController</a>;
-<a name="l00070"></a>00070   <span class="keyword">struct </span><a class="code" href="struct_d_s_pose.html">DSPose</a> m_dspCurrentPose;
-<a name="l00071"></a>00071   <span class="keyword">struct </span><a class="code" href="struct_d_s_twist.html">DSTwist</a> m_dstCurrentTwist;
-<a name="l00072"></a>00072   <span class="keyword">struct </span><a class="code" href="struct_d_s_control_set_point.html">DSControlSetPoint</a> m_cspDesired;
-<a name="l00073"></a>00073   <span class="keyword">enum</span> Controller m_enumCtrl;
-<a name="l00077"></a><a class="code" href="class_c_crazyflie.html#a17eca74aee6d30607f72b03cfdba35e4">00077</a>   <span class="keywordtype">double</span> <a class="code" href="class_c_crazyflie.html#a17eca74aee6d30607f72b03cfdba35e4">m_dSecondsLast</a>;
-<a name="l00078"></a>00078   
-<a name="l00079"></a>00079   <span class="comment">// Control related parameters</span>
-<a name="l00082"></a><a class="code" href="class_c_crazyflie.html#abbe95f89e388ba139755cecac31cdace">00082</a> <span class="comment"></span>  <span class="keywordtype">float</span> <a class="code" href="class_c_crazyflie.html#abbe95f89e388ba139755cecac31cdace">m_fMaxAbsRoll</a>;
-<a name="l00085"></a><a class="code" href="class_c_crazyflie.html#a7711e373d8cc3303854c61e37461e427">00085</a>   <span class="keywordtype">float</span> <a class="code" href="class_c_crazyflie.html#a7711e373d8cc3303854c61e37461e427">m_fMaxAbsPitch</a>;
-<a name="l00088"></a><a class="code" href="class_c_crazyflie.html#a20c45da8bcfe3bf028abbeb10978e58b">00088</a>   <span class="keywordtype">float</span> <a class="code" href="class_c_crazyflie.html#a20c45da8bcfe3bf028abbeb10978e58b">m_fMaxYaw</a>;
-<a name="l00090"></a><a class="code" href="class_c_crazyflie.html#a6eddca40b82919149aa536a2ffd57264">00090</a>   <span class="keywordtype">int</span> <a class="code" href="class_c_crazyflie.html#a6eddca40b82919149aa536a2ffd57264">m_nMaxThrust</a>;
-<a name="l00092"></a><a class="code" href="class_c_crazyflie.html#adba5e25119c23b325ce24a18a0f62a2b">00092</a>   <span class="keywordtype">int</span> <a class="code" href="class_c_crazyflie.html#adba5e25119c23b325ce24a18a0f62a2b">m_nMinThrust</a>;
-<a name="l00099"></a><a class="code" href="class_c_crazyflie.html#af3f502f7b5d99b35ef6da175f5d0a07a">00099</a>   <span class="keywordtype">bool</span> <a class="code" href="class_c_crazyflie.html#af3f502f7b5d99b35ef6da175f5d0a07a">m_bControllerIgnoresYaw</a>;
-<a name="l00103"></a><a class="code" href="class_c_crazyflie.html#a1071afe581717592fcc712146815c9be">00103</a>   <span class="keywordtype">float</span> <a class="code" href="class_c_crazyflie.html#a1071afe581717592fcc712146815c9be">m_fArrivalThreshold</a>;
-<a name="l00104"></a>00104 
-<a name="l00105"></a>00105   <span class="comment">// Functions</span>
-<a name="l00109"></a>00109 <span class="comment"></span>  <span class="keywordtype">void</span> resetState();
-<a name="l00110"></a>00110   <span class="keywordtype">double</span> currentTime();
-<a name="l00111"></a>00111   
-<a name="l00112"></a>00112   <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a> identityControlSignal();
-<a name="l00113"></a>00113   <span class="keywordtype">void</span> applyControllerResult(<span class="keywordtype">double</span> dElapsedTime);
-<a name="l00114"></a>00114   <span class="keywordtype">void</span> calculatePoseIntegral(<span class="keywordtype">double</span> dElapsedTime);
-<a name="l00115"></a>00115   <span class="keywordtype">void</span> calculateCartesianVelocity();
-<a name="l00116"></a>00116 
-<a name="l00130"></a>00130   <span class="keywordtype">bool</span> sendSetpoint(<span class="keywordtype">float</span> fRoll, <span class="keywordtype">float</span> fPitch, <span class="keywordtype">float</span> fYaw, <span class="keywordtype">short</span> sThrust);
-<a name="l00131"></a>00131 
-<a name="l00132"></a>00132   <span class="keywordtype">void</span> updateTOC();
-<a name="l00133"></a>00133   <span class="keywordtype">void</span> populateTOCElement(<span class="keywordtype">int</span> nIndex);
-<a name="l00134"></a>00134   <span class="keywordtype">void</span> populateNextTOCElement();
-<a name="l00135"></a>00135 
-<a name="l00136"></a>00136   <span class="keywordtype">void</span> populateLOGElement(<span class="keywordtype">int</span> nIndex);
-<a name="l00137"></a>00137   <span class="keywordtype">void</span> populateNextLOGElement();
-<a name="l00138"></a>00138   
-<a name="l00139"></a>00139   <span class="keywordtype">void</span> updateLogTOC();
-<a name="l00140"></a>00140     
-<a name="l00141"></a>00141  <span class="keyword">public</span>:
-<a name="l00150"></a>00150   <a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>(<a class="code" href="class_c_crazy_radio.html">CCrazyRadio</a> *crRadio);
-<a name="l00155"></a>00155   ~<a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>();
-<a name="l00156"></a>00156   
-<a name="l00163"></a>00163   <span class="keywordtype">void</span> setThrust(<span class="keywordtype">int</span> nThrust);
-<a name="l00164"></a>00164   <span class="keywordtype">int</span> thrust();
-<a name="l00165"></a>00165   
-<a name="l00172"></a>00172   <span class="keywordtype">void</span> setRoll(<span class="keywordtype">float</span> fRoll);
-<a name="l00173"></a>00173   <span class="keywordtype">float</span> roll();
-<a name="l00174"></a>00174 
-<a name="l00181"></a>00181   <span class="keywordtype">void</span> setPitch(<span class="keywordtype">float</span> fPitch);
-<a name="l00182"></a>00182   <span class="keywordtype">float</span> pitch();
-<a name="l00183"></a>00183 
-<a name="l00190"></a>00190   <span class="keywordtype">void</span> setYaw(<span class="keywordtype">float</span> fYaw);
-<a name="l00191"></a>00191   <span class="keywordtype">float</span> yaw();
-<a name="l00192"></a>00192   
-<a name="l00193"></a>00193   <span class="keywordtype">bool</span> cycle();
-<a name="l00194"></a>00194   <span class="keywordtype">bool</span> copterInRange();
+<a name="l00045"></a>00045 <span class="keyword">enum</span> Controller {
+<a name="l00046"></a>00046   CTRL_NONE = 0,
+<a name="l00047"></a>00047   CTRL_P = 1
+<a name="l00048"></a>00048 };
+<a name="l00049"></a>00049 
+<a name="l00055"></a><a class="code" href="class_c_crazyflie.html">00055</a> <span class="keyword">class </span><a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> {
+<a name="l00056"></a>00056  <span class="keyword">private</span>:
+<a name="l00057"></a>00057   <span class="comment">// Variables</span>
+<a name="l00060"></a>00060 <span class="comment"></span>  <a class="code" href="class_c_crazy_radio.html">CCrazyRadio</a> *m_crRadio;
+<a name="l00062"></a>00062   <span class="keywordtype">int</span> m_nLastRequestedVariableIndex;
+<a name="l00065"></a>00065   <span class="keywordtype">int</span> m_nThrust;
+<a name="l00067"></a>00067   <span class="keywordtype">float</span> m_fRoll;
+<a name="l00070"></a>00070   <span class="keywordtype">float</span> m_fPitch;
+<a name="l00072"></a>00072   <span class="keywordtype">float</span> m_fYaw;
+<a name="l00074"></a>00074   <a class="code" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers.">CController</a> *m_ctrlController;
+<a name="l00077"></a>00077   <span class="keyword">struct </span><a class="code" href="struct_d_s_pose.html" title="Struct describing position and orientation.">DSPose</a> m_dspCurrentPose;
+<a name="l00080"></a>00080   <span class="keyword">struct </span><a class="code" href="struct_d_s_twist.html" title="Struct describing linear and angular twist.">DSTwist</a> m_dstCurrentTwist;
+<a name="l00083"></a>00083   <span class="keyword">struct </span><a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> m_cspDesired;
+<a name="l00084"></a>00084   <span class="keyword">enum</span> Controller m_enumCtrl;
+<a name="l00090"></a>00090   <span class="keywordtype">double</span> m_dSecondsLast;
+<a name="l00091"></a>00091   
+<a name="l00092"></a>00092   <span class="comment">// Control related parameters</span>
+<a name="l00095"></a>00095 <span class="comment"></span>  <span class="keywordtype">float</span> m_fMaxAbsRoll;
+<a name="l00098"></a>00098   <span class="keywordtype">float</span> m_fMaxAbsPitch;
+<a name="l00101"></a>00101   <span class="keywordtype">float</span> m_fMaxYaw;
+<a name="l00103"></a>00103   <span class="keywordtype">int</span> m_nMaxThrust;
+<a name="l00105"></a>00105   <span class="keywordtype">int</span> m_nMinThrust;
+<a name="l00113"></a>00113   <span class="keywordtype">bool</span> m_bControllerIgnoresYaw;
+<a name="l00119"></a>00119   <span class="keywordtype">float</span> m_fArrivalThreshold;
+<a name="l00120"></a>00120 
+<a name="l00121"></a>00121   <span class="comment">// Functions</span>
+<a name="l00127"></a>00127 <span class="comment"></span>  <span class="keywordtype">void</span> resetState();
+<a name="l00136"></a>00136   <span class="keywordtype">double</span> currentTime();
+<a name="l00137"></a>00137   
+<a name="l00138"></a>00138   <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> identityControlSignal();
+<a name="l00139"></a>00139   <span class="keywordtype">void</span> applyControllerResult(<span class="keywordtype">double</span> dElapsedTime);
+<a name="l00140"></a>00140   <span class="keywordtype">void</span> calculatePoseIntegral(<span class="keywordtype">double</span> dElapsedTime);
+<a name="l00141"></a>00141   <span class="keywordtype">void</span> calculateCartesianVelocity();
+<a name="l00142"></a>00142 
+<a name="l00156"></a>00156   <span class="keywordtype">bool</span> sendSetpoint(<span class="keywordtype">float</span> fRoll, <span class="keywordtype">float</span> fPitch, <span class="keywordtype">float</span> fYaw, <span class="keywordtype">short</span> sThrust);
+<a name="l00157"></a>00157 
+<a name="l00158"></a>00158   <span class="keywordtype">void</span> updateTOC();
+<a name="l00159"></a>00159   <span class="keywordtype">void</span> populateTOCElement(<span class="keywordtype">int</span> nIndex);
+<a name="l00160"></a>00160   <span class="keywordtype">void</span> populateNextTOCElement();
+<a name="l00161"></a>00161 
+<a name="l00162"></a>00162   <span class="keywordtype">void</span> populateLOGElement(<span class="keywordtype">int</span> nIndex);
+<a name="l00163"></a>00163   <span class="keywordtype">void</span> populateNextLOGElement();
+<a name="l00164"></a>00164   
+<a name="l00165"></a>00165   <span class="keywordtype">void</span> updateLogTOC();
+<a name="l00166"></a>00166     
+<a name="l00167"></a>00167  <span class="keyword">public</span>:
+<a name="l00176"></a>00176   <a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>(<a class="code" href="class_c_crazy_radio.html">CCrazyRadio</a> *crRadio);
+<a name="l00181"></a>00181   ~<a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>();
+<a name="l00182"></a>00182   
+<a name="l00189"></a>00189   <span class="keywordtype">void</span> setThrust(<span class="keywordtype">int</span> nThrust);
+<a name="l00194"></a>00194   <span class="keywordtype">int</span> thrust();
 <a name="l00195"></a>00195   
-<a name="l00196"></a>00196   <span class="keywordtype">void</span> disableController();
-<a name="l00197"></a>00197   <span class="keywordtype">void</span> setPController(<span class="keywordtype">float</span> fPGain);
-<a name="l00198"></a>00198   
-<a name="l00199"></a>00199   <span class="keywordtype">void</span> setDesiredSetPoint(<span class="keyword">struct</span> <a class="code" href="struct_d_s_control_set_point.html">DSControlSetPoint</a> cspDesired);
-<a name="l00200"></a>00200   
-<a name="l00201"></a>00201   <span class="keywordtype">double</span> distanceBetweenPositions(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html">DSVector</a> dsvPosition1, <span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html">DSVector</a> dsvPosition2);
-<a name="l00202"></a>00202   <span class="keywordtype">double</span> distanceToPosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html">DSVector</a> dsvPosition);
-<a name="l00203"></a>00203   <span class="keywordtype">double</span> distanceToDesiredPosition();
-<a name="l00204"></a>00204   <span class="keywordtype">void</span> goToRelativePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html">DSVector</a> dsvRelative);
-<a name="l00205"></a>00205   <span class="keywordtype">void</span> goToAbsolutePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html">DSVector</a> dsvAbsolute);
-<a name="l00206"></a>00206   
-<a name="l00216"></a>00216   <span class="keywordtype">bool</span> isAtDesiredPosition();
-<a name="l00229"></a>00229   <span class="keywordtype">bool</span> isAtDesiredPosition(<span class="keywordtype">float</span> fThreshold);
-<a name="l00230"></a>00230   
-<a name="l00231"></a>00231   <span class="keywordtype">void</span> setArrivalThreshold(<span class="keywordtype">float</span> fArrivalThreshold);
-<a name="l00232"></a>00232   <span class="keywordtype">float</span> arrivalThreshold();
-<a name="l00233"></a>00233   
-<a name="l00234"></a>00234   <span class="keywordtype">void</span> setControllerIgnoresYaw(<span class="keywordtype">bool</span> bControllerIgnoresYaw);
-<a name="l00235"></a>00235   <span class="keywordtype">bool</span> controllerIgnoresYaw();
-<a name="l00236"></a>00236 };
-<a name="l00237"></a>00237 
-<a name="l00238"></a>00238 
-<a name="l00239"></a>00239 <span class="preprocessor">#endif </span><span class="comment">/* __C_CRAZYFLIE_H__ */</span>
+<a name="l00202"></a>00202   <span class="keywordtype">void</span> setRoll(<span class="keywordtype">float</span> fRoll);
+<a name="l00207"></a>00207   <span class="keywordtype">float</span> roll();
+<a name="l00208"></a>00208   
+<a name="l00215"></a>00215   <span class="keywordtype">void</span> setPitch(<span class="keywordtype">float</span> fPitch);
+<a name="l00220"></a>00220   <span class="keywordtype">float</span> pitch();
+<a name="l00221"></a>00221 
+<a name="l00228"></a>00228   <span class="keywordtype">void</span> setYaw(<span class="keywordtype">float</span> fYaw);
+<a name="l00233"></a>00233   <span class="keywordtype">float</span> yaw();
+<a name="l00234"></a>00234   
+<a name="l00248"></a>00248   <span class="keywordtype">bool</span> cycle();
+<a name="l00257"></a>00257   <span class="keywordtype">bool</span> copterInRange();
+<a name="l00258"></a>00258   
+<a name="l00263"></a>00263   <span class="keywordtype">void</span> disableController();
+<a name="l00268"></a>00268   <span class="keywordtype">void</span> setPController(<span class="keywordtype">float</span> fPGain);
+<a name="l00269"></a>00269   
+<a name="l00279"></a>00279   <span class="keywordtype">void</span> setDesiredSetPoint(<span class="keyword">struct</span> <a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> cspDesired);
+<a name="l00280"></a>00280   
+<a name="l00288"></a>00288   <span class="keywordtype">double</span> distanceBetweenPositions(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition1, <span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition2);
+<a name="l00294"></a>00294   <span class="keywordtype">double</span> distanceToPosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition);
+<a name="l00300"></a>00300   <span class="keywordtype">double</span> distanceToDesiredPosition();
+<a name="l00301"></a>00301   
+<a name="l00310"></a>00310   <span class="keywordtype">void</span> goToRelativePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvRelative);
+<a name="l00325"></a>00325   <span class="keywordtype">void</span> goToAbsolutePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvAbsolute);
+<a name="l00326"></a>00326   
+<a name="l00336"></a>00336   <span class="keywordtype">bool</span> isAtDesiredPosition();
+<a name="l00349"></a>00349   <span class="keywordtype">bool</span> isAtDesiredPosition(<span class="keywordtype">float</span> fThreshold);
+<a name="l00350"></a>00350   
+<a name="l00361"></a>00361   <span class="keywordtype">void</span> setArrivalThreshold(<span class="keywordtype">float</span> fArrivalThreshold);
+<a name="l00366"></a>00366   <span class="keywordtype">float</span> arrivalThreshold();
+<a name="l00367"></a>00367   
+<a name="l00372"></a>00372   <span class="keywordtype">void</span> setControllerIgnoresYaw(<span class="keywordtype">bool</span> bControllerIgnoresYaw);
+<a name="l00378"></a>00378   <span class="keywordtype">bool</span> controllerIgnoresYaw();
+<a name="l00379"></a>00379   
+<a name="l00386"></a>00386   <span class="keywordtype">void</span> relocalize();
+<a name="l00387"></a>00387 };
+<a name="l00388"></a>00388 
+<a name="l00389"></a>00389 
+<a name="l00390"></a>00390 <span class="preprocessor">#endif </span><span class="comment">/* __C_CRAZYFLIE_H__ */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -200,7 +203,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -209,7 +212,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue May 28 2013 17:13:40 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

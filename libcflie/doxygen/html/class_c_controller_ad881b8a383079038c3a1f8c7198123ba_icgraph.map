@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_controller.html#a840d9cb376c21b58566c7f9c069e402f" title="Constructor for the basic controller class." alt="" coords="273,5,436,35"/>
+<area shape="rect" id="node5" href="$class_c_crazyflie.html#a24e35e842b9bb4d0d05f180de6ab6755" title="Globally sets whether controllers ignore yaw control." alt="" coords="237,59,472,88"/>
+<area shape="rect" id="node7" href="$class_c_crazyflie.html#a28cdd3a2f72ea3ba3efe5b40fc729cd6" title="Selects the P gain based controller as active controller." alt="" coords="268,112,441,141"/>
+</map>

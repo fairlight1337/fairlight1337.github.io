@@ -1,4 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node1" href="$class_c_controller.html" title="CController" alt="" coords="5,5,93,35"/>
-<area shape="rect" id="node3" href="$class_c_p_controller.html" title="CPController" alt="" coords="143,5,239,35"/>
+<area shape="rect" id="node1" href="$class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="5,5,93,35"/>
+<area shape="rect" id="node3" href="$class_c_p_controller.html" title="Simple P gain based controller class." alt="" coords="143,5,239,35"/>
 </map>

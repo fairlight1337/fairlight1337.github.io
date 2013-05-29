@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_crazyflie.html#af8ed1c504299ecda3e835a4009afe3c6" title="Returns the distance between the current and the given physical position." alt="" coords="301,5,504,35"/>
+<area shape="rect" id="node5" href="$class_c_crazyflie.html#a747f2375b58b112cb79af982ac4973dc" title="Returns the distance between two physical positions." alt="" coords="553,5,799,35"/>
+</map>

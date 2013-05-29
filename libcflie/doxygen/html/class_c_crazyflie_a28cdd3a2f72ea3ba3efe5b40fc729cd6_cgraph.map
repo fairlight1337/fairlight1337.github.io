@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_crazyflie.html#a49ca10991310aefaabf622a276d70e5e" title="Signals whether or not the yaw control is ignored in controllers." alt="" coords="231,5,444,35"/>
+<area shape="rect" id="node5" href="$class_c_crazyflie.html#ae6c6bfd5e202fd3a06118025cb673e0f" title="Switches off the current controller." alt="" coords="243,59,432,88"/>
+<area shape="rect" id="node7" href="$class_c_controller.html#ad881b8a383079038c3a1f8c7198123ba" title="Sets whether the yaw control is ignored or not." alt="" coords="247,112,428,141"/>
+</map>

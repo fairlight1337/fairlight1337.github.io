@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><table border="0" cellspacing="10" cellpadding="0">
 <tr><td><img src="inherit_graph_0.png" border="0" alt="" usemap="#_c_controller"/>
 <map name="_c_controller" id="_c_controller">
-<area shape="rect" id="node1" href="class_c_controller.html" title="CController" alt="" coords="5,5,93,35"/><area shape="rect" id="node3" href="class_c_p_controller.html" title="CPController" alt="" coords="143,5,239,35"/></map>
+<area shape="rect" id="node1" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="5,5,93,35"/><area shape="rect" id="node3" href="class_c_p_controller.html" title="Simple P gain based controller class." alt="" coords="143,5,239,35"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_1.png" border="0" alt="" usemap="#_c_crazyflie"/>
 <map name="_c_crazyflie" id="_c_crazyflie">
@@ -84,27 +84,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </td></tr>
 <tr><td><img src="inherit_graph_4.png" border="0" alt="" usemap="#_d_s_control_set_point"/>
 <map name="_d_s_control_set_point" id="_d_s_control_set_point">
-<area shape="rect" id="node1" href="struct_d_s_control_set_point.html" title="DSControlSetPoint" alt="" coords="5,5,139,35"/></map>
+<area shape="rect" id="node1" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="5,5,139,35"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_5.png" border="0" alt="" usemap="#_d_s_orientation"/>
 <map name="_d_s_orientation" id="_d_s_orientation">
-<area shape="rect" id="node1" href="struct_d_s_orientation.html" title="DSOrientation" alt="" coords="5,5,109,35"/></map>
+<area shape="rect" id="node1" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="5,5,109,35"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_6.png" border="0" alt="" usemap="#_d_s_pose"/>
 <map name="_d_s_pose" id="_d_s_pose">
-<area shape="rect" id="node1" href="struct_d_s_pose.html" title="DSPose" alt="" coords="7,5,76,35"/></map>
+<area shape="rect" id="node1" href="struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="7,5,76,35"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_7.png" border="0" alt="" usemap="#_d_s_twist"/>
 <map name="_d_s_twist" id="_d_s_twist">
-<area shape="rect" id="node1" href="struct_d_s_twist.html" title="DSTwist" alt="" coords="7,5,79,35"/></map>
+<area shape="rect" id="node1" href="struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="7,5,79,35"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_8.png" border="0" alt="" usemap="#_d_s_vector"/>
 <map name="_d_s_vector" id="_d_s_vector">
-<area shape="rect" id="node1" href="struct_d_s_vector.html" title="DSVector" alt="" coords="7,5,84,35"/></map>
+<area shape="rect" id="node1" href="struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="7,5,84,35"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_9.png" border="0" alt="" usemap="#_d_s_velocity_control_signal"/>
 <map name="_d_s_velocity_control_signal" id="_d_s_velocity_control_signal">
-<area shape="rect" id="node1" href="struct_d_s_velocity_control_signal.html" title="DSVelocityControlSignal" alt="" coords="7,5,172,35"/></map>
+<area shape="rect" id="node1" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal." alt="" coords="7,5,172,35"/></map>
 </td></tr>
 <tr><td><img src="inherit_graph_10.png" border="0" alt="" usemap="#_l_o_g_element"/>
 <map name="_l_o_g_element" id="_l_o_g_element">
@@ -121,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue May 28 2013 17:13:40 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

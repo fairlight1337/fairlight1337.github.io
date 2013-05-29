@@ -60,36 +60,169 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">CController Class Reference</div>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="CController" --><div class="dynheader">
+<!-- doxytag: class="CController" -->
+<p>Basic controller superclass supplying variables and functions valid for all controllers.  
+ <a href="class_c_controller.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_c_controller_8h_source.html">CController.h</a>&gt;</code></p>
+<div class="dynheader">
 Inheritance diagram for CController:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_controller__inherit__graph.png" border="0" usemap="#_c_controller_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c_controller_inherit__map" id="_c_controller_inherit__map">
-<area shape="rect" id="node3" href="class_c_p_controller.html" title="CPController" alt="" coords="5,83,101,112"/></map>
+<area shape="rect" id="node3" href="class_c_p_controller.html" title="Simple P gain based controller class." alt="" coords="5,83,101,112"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="class_c_controller-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad881b8a383079038c3a1f8c7198123ba"></a><!-- doxytag: member="CController::setIgnoresYaw" ref="ad881b8a383079038c3a1f8c7198123ba" args="(bool bIgnoresYaw)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setIgnoresYaw</b> (bool bIgnoresYaw)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1f70463438608f1771bae629f6ae5ec"></a><!-- doxytag: member="CController::ignoresYaw" ref="ad1f70463438608f1771bae629f6ae5ec" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>ignoresYaw</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f1fbb8e08303cdef4ff400284c46702"></a><!-- doxytag: member="CController::inputSignalForDesiredPose" ref="a9f1fbb8e08303cdef4ff400284c46702" args="(struct DSPose dspCurrent, struct DSControlSetPoint cspDesired)" -->
-virtual struct <br class="typebreak"/>
-<a class="el" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputSignalForDesiredPose</b> (struct <a class="el" href="struct_d_s_pose.html">DSPose</a> dspCurrent, struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a> cspDesired)</td></tr>
-<tr><td colspan="2"><h2><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ee38ff5e943192f063c51f4582fa004"></a><!-- doxytag: member="CController::m_bIgnoresYaw" ref="a1ee38ff5e943192f063c51f4582fa004" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIgnoresYaw</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_controller.html#a840d9cb376c21b58566c7f9c069e402f">CController</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the basic controller class.  <a href="#a840d9cb376c21b58566c7f9c069e402f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06c1bf4eeb697d4f7574ea1d7c51d267"></a><!-- doxytag: member="CController::~CController" ref="a06c1bf4eeb697d4f7574ea1d7c51d267" args="()" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_controller.html#a06c1bf4eeb697d4f7574ea1d7c51d267">~CController</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the basic controller class. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_controller.html#ad881b8a383079038c3a1f8c7198123ba">setIgnoresYaw</a> (bool bIgnoresYaw)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the yaw control is ignored or not.  <a href="#ad881b8a383079038c3a1f8c7198123ba"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_controller.html#ad1f70463438608f1771bae629f6ae5ec">ignoresYaw</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether yaw control is ignored.  <a href="#ad1f70463438608f1771bae629f6ae5ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual struct <br class="typebreak"/>
+<a class="el" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_controller.html#a7508b4bc11e4894983e906e2bb729162">inputSignalForDesiredPosition</a> (struct <a class="el" href="struct_d_s_pose.html">DSPose</a> dspCurrent, struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a> cspDesired)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the current controller output signal.  <a href="#a7508b4bc11e4894983e906e2bb729162"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Basic controller superclass supplying variables and functions valid for all controllers. </p>
+<p>All controllers need the flag whether they should ignore or take into account the copter yaw while controlling it's state. Also, The virtual function for generating a linear and angular twist for a desired pose is defined here. Other than that, the class does not do anything and only serves as a superclass for controllers such as the P-controller (<a class="el" href="class_c_p_controller.html" title="Simple P gain based controller class.">CPController</a>). </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a840d9cb376c21b58566c7f9c069e402f"></a><!-- doxytag: member="CController::CController" ref="a840d9cb376c21b58566c7f9c069e402f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CController::CController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor for the basic controller class. </p>
+<p>Initializes internal flags. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_controller_a840d9cb376c21b58566c7f9c069e402f_cgraph.png" border="0" usemap="#class_c_controller_a840d9cb376c21b58566c7f9c069e402f_cgraph" alt=""/></div>
+<map name="class_c_controller_a840d9cb376c21b58566c7f9c069e402f_cgraph" id="class_c_controller_a840d9cb376c21b58566c7f9c069e402f_cgraph">
+<area shape="rect" id="node3" href="class_c_controller.html#ad881b8a383079038c3a1f8c7198123ba" title="Sets whether the yaw control is ignored or not." alt="" coords="217,5,399,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ad1f70463438608f1771bae629f6ae5ec"></a><!-- doxytag: member="CController::ignoresYaw" ref="ad1f70463438608f1771bae629f6ae5ec" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CController::ignoresYaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns whether yaw control is ignored. </p>
+<p>Returns the internal state that denoted whether the copter's yaw is being controlled or not.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Boolean value that denotes the current ignorance setting of copter yaw control </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7508b4bc11e4894983e906e2bb729162"></a><!-- doxytag: member="CController::inputSignalForDesiredPosition" ref="a7508b4bc11e4894983e906e2bb729162" args="(struct DSPose dspCurrent, struct DSControlSetPoint cspDesired)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a> CController::inputSignalForDesiredPosition </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_d_s_pose.html">DSPose</a>&#160;</td>
+          <td class="paramname"><em>dspCurrent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a>&#160;</td>
+          <td class="paramname"><em>cspDesired</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [read, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calculates the current controller output signal. </p>
+<p>The control signal depends on the current pose of the copter, as well, as the desired set point given as <a class="el" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a>. For more elaborate controllers, it might also depend on an internal controller state. The return value is a <a class="el" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> in which the angular twist as well as the thrust to be sent to the copter's internal controller is stored.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dspCurrent</td><td>The current pose of the copter. This is supplied by an instance of the governing class, i.e. <a class="el" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> </td></tr>
+    <tr><td class="paramname">cspDesired</td><td>Denoted the desired set point, consisting of R^3 position and optional yaw (depending on the <a class="el" href="class_c_controller.html#ad1f70463438608f1771bae629f6ae5ec" title="Returns whether yaw control is ignored.">ignoresYaw()</a> value)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns the controller output signal, containing absolute roll, pitch, yaw and thrust values to be sent to the copter. </dd></dl>
+
+<p>Reimplemented in <a class="el" href="class_c_p_controller.html#abad6eb9cf9ec615f0b42c2d937192282">CPController</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ad881b8a383079038c3a1f8c7198123ba"></a><!-- doxytag: member="CController::setIgnoresYaw" ref="ad881b8a383079038c3a1f8c7198123ba" args="(bool bIgnoresYaw)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CController::setIgnoresYaw </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bIgnoresYaw</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets whether the yaw control is ignored or not. </p>
+<p>When setting this flag, the controller (and it's subclasses) ignores control of the copter's yaw.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bIgnoresYaw</td><td>Boolean value denoting whether or not the yaw control is ignored when calculating the control signal </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_controller_ad881b8a383079038c3a1f8c7198123ba_icgraph.png" border="0" usemap="#class_c_controller_ad881b8a383079038c3a1f8c7198123ba_icgraph" alt=""/></div>
+<map name="class_c_controller_ad881b8a383079038c3a1f8c7198123ba_icgraph" id="class_c_controller_ad881b8a383079038c3a1f8c7198123ba_icgraph">
+<area shape="rect" id="node3" href="class_c_controller.html#a840d9cb376c21b58566c7f9c069e402f" title="Constructor for the basic controller class." alt="" coords="273,5,436,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#a24e35e842b9bb4d0d05f180de6ab6755" title="Globally sets whether controllers ignore yaw control." alt="" coords="237,59,472,88"/><area shape="rect" id="node7" href="class_c_crazyflie.html#a28cdd3a2f72ea3ba3efe5b40fc729cd6" title="Selects the P gain based controller as active controller." alt="" coords="268,112,441,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/cflie/<a class="el" href="_c_controller_8h_source.html">CController.h</a></li>
 <li>src/cflie/CController.cpp</li>
@@ -100,7 +233,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIgnoresYaw</b></td
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,7 +242,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bIgnoresYaw</b></td
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue May 28 2013 17:13:40 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

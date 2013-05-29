@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_crazyflie.html#ac8db590372842ff6a7f7391fc76bc551" title="Returns the distance between the current and the desired physical position." alt="" coords="256,5,504,35"/>
+<area shape="rect" id="node5" href="$class_c_crazyflie.html#a5b6f152b95137346a2da4c28ba9d8a40" title="Whether or not the copter has reached it&#39;s desired position, given a custom threshold value..." alt="" coords="553,5,759,35"/>
+</map>

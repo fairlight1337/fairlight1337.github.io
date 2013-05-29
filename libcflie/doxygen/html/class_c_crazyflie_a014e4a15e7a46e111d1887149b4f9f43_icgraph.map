@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_crazyflie.html#a1bd50cee01da8e895cf6078e61c30a63" title="Sets the desired absolute copter position." alt="" coords="259,5,477,35"/>
+<area shape="rect" id="node5" href="$class_c_crazyflie.html#ae9d35a3a91b49f8c253985a529405c75" title="Sets the desired relative copter position." alt="" coords="525,5,741,35"/>
+</map>

@@ -60,9 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-methods">Private Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">CCrazyRadio Class Reference</div>  </div>
 </div>
@@ -120,88 +118,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>countLOGElements</b> (
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the copter is answering sent packets.  <a href="#a503449d14ef7d2f3c63ed3a8f922bd9e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809">usbOK</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the USB connection is still operational.  <a href="#a67274ed88cec66eebc5f74ec6f24a809"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pri-methods"></a>
-Private Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95f38e5df9633626fb0e7606e59e77c6"></a><!-- doxytag: member="CCrazyRadio::listDevices" ref="a95f38e5df9633626fb0e7606e59e77c6" args="(int nVendorID, int nProductID)" -->
-list&lt; libusb_device * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>listDevices</b> (int nVendorID, int nProductID)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a837bc04828ae7b2c5a814e91161232fd"></a><!-- doxytag: member="CCrazyRadio::openUSBDongle" ref="a837bc04828ae7b2c5a814e91161232fd" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>openUSBDongle</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a427a946a1663a8ae6c243119f4816774"></a><!-- doxytag: member="CCrazyRadio::claimInterface" ref="a427a946a1663a8ae6c243119f4816774" args="(int nInterface)" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>claimInterface</b> (int nInterface)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a701d751ac86c180aa2691983d687f858"></a><!-- doxytag: member="CCrazyRadio::closeDevice" ref="a701d751ac86c180aa2691983d687f858" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>closeDevice</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a388a05f2a0635f8172e2659a8e1a9a09"></a><!-- doxytag: member="CCrazyRadio::readACK" ref="a388a05f2a0635f8172e2659a8e1a9a09" args="()" -->
-<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>readACK</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20f66300cc3c5dc4eb8def220bdcef15"></a><!-- doxytag: member="CCrazyRadio::writeData" ref="a20f66300cc3c5dc4eb8def220bdcef15" args="(void *vdData, int nLength)" -->
-<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>writeData</b> (void *vdData, int nLength)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8aefa8132d96a5951fb609d0f79a8915"></a><!-- doxytag: member="CCrazyRadio::writeControl" ref="a8aefa8132d96a5951fb609d0f79a8915" args="(void *vdData, int nLength, uint8_t u8Request, uint16_t u16Value, uint16_t u16Index)" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>writeControl</b> (void *vdData, int nLength, uint8_t u8Request, uint16_t u16Value, uint16_t u16Index)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08ea94a5ba3b38a094d00c4641d59a16"></a><!-- doxytag: member="CCrazyRadio::readData" ref="a08ea94a5ba3b38a094d00c4641d59a16" args="(void *vdData, int &amp;nMaxLength)" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>readData</b> (void *vdData, int &amp;nMaxLength)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28e76231203cbf08531a182431dad5bf"></a><!-- doxytag: member="CCrazyRadio::setARC" ref="a28e76231203cbf08531a182431dad5bf" args="(int nARC)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setARC</b> (int nARC)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a60ef00585f7b9521463f1f4f672b50d2"></a><!-- doxytag: member="CCrazyRadio::setChannel" ref="a60ef00585f7b9521463f1f4f672b50d2" args="(int nChannel)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setChannel</b> (int nChannel)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76e3a6a4a5aa360f7df10c78f74aafc1"></a><!-- doxytag: member="CCrazyRadio::setDataRate" ref="a76e3a6a4a5aa360f7df10c78f74aafc1" args="(string strDataRate)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setDataRate</b> (string strDataRate)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc9e4ff81ecbeec4ebaccdb744bcf6fe"></a><!-- doxytag: member="CCrazyRadio::setARDBytes" ref="acc9e4ff81ecbeec4ebaccdb744bcf6fe" args="(int nARDBytes)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setARDBytes</b> (int nARDBytes)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73e23646e0ebabe791e02c984cf11153"></a><!-- doxytag: member="CCrazyRadio::setARDTime" ref="a73e23646e0ebabe791e02c984cf11153" args="(int nARDTime)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setARDTime</b> (int nARDTime)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3bddf3d68d26e57d9d2186f558f8c64"></a><!-- doxytag: member="CCrazyRadio::setAddress" ref="ae3bddf3d68d26e57d9d2186f558f8c64" args="(char *cAddress)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setAddress</b> (char *cAddress)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8f4925d58a25ee25594a1da50948ce5"></a><!-- doxytag: member="CCrazyRadio::setContCarrier" ref="ac8f4925d58a25ee25594a1da50948ce5" args="(bool bContCarrier)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setContCarrier</b> (bool bContCarrier)</td></tr>
-<tr><td colspan="2"><h2><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8577db0332cc5a8a7e1835d42e8807cf"></a><!-- doxytag: member="CCrazyRadio::m_strRadioIdentifier" ref="a8577db0332cc5a8a7e1835d42e8807cf" args="" -->
-string&#160;</td><td class="memItemRight" valign="bottom"><b>m_strRadioIdentifier</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e0d2514e9fa403171be6f665f0a5652"></a><!-- doxytag: member="CCrazyRadio::m_ctxContext" ref="a5e0d2514e9fa403171be6f665f0a5652" args="" -->
-libusb_context *&#160;</td><td class="memItemRight" valign="bottom"><b>m_ctxContext</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32e62a1390df9ae8be70aa6fb339e4b3"></a><!-- doxytag: member="CCrazyRadio::m_devDevice" ref="a32e62a1390df9ae8be70aa6fb339e4b3" args="" -->
-libusb_device *&#160;</td><td class="memItemRight" valign="bottom"><b>m_devDevice</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab29bde075c0b78ea85a98d305536547"></a><!-- doxytag: member="CCrazyRadio::m_hndlDevice" ref="aab29bde075c0b78ea85a98d305536547" args="" -->
-libusb_device_handle *&#160;</td><td class="memItemRight" valign="bottom"><b>m_hndlDevice</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad16245aad43ad850de0ad60e3264365c"></a><!-- doxytag: member="CCrazyRadio::m_nARC" ref="ad16245aad43ad850de0ad60e3264365c" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nARC</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab20f3d1120e9d12dfb90785b5c7558a2"></a><!-- doxytag: member="CCrazyRadio::m_nChannel" ref="ab20f3d1120e9d12dfb90785b5c7558a2" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nChannel</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad76fe2b75d578bae253c99b434f13523"></a><!-- doxytag: member="CCrazyRadio::m_strDataRate" ref="ad76fe2b75d578bae253c99b434f13523" args="" -->
-string&#160;</td><td class="memItemRight" valign="bottom"><b>m_strDataRate</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4b5ce067fc03bf0b0f6ae2232205d74"></a><!-- doxytag: member="CCrazyRadio::m_nARDTime" ref="ae4b5ce067fc03bf0b0f6ae2232205d74" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nARDTime</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd75b37990723a7d4434d59e0e8e445a"></a><!-- doxytag: member="CCrazyRadio::m_nARDBytes" ref="abd75b37990723a7d4434d59e0e8e445a" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nARDBytes</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a095badd38b4894a3c956dc50209d4d83"></a><!-- doxytag: member="CCrazyRadio::m_enumPower" ref="a095badd38b4894a3c956dc50209d4d83" args="" -->
-enum Power&#160;</td><td class="memItemRight" valign="bottom"><b>m_enumPower</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a676ebc1426e1ddaf80d3e53fbbbb2560"></a><!-- doxytag: member="CCrazyRadio::m_cAddress" ref="a676ebc1426e1ddaf80d3e53fbbbb2560" args="" -->
-char *&#160;</td><td class="memItemRight" valign="bottom"><b>m_cAddress</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fb4e687a919aeda51083bfdb56bee47"></a><!-- doxytag: member="CCrazyRadio::m_bContCarrier" ref="a2fb4e687a919aeda51083bfdb56bee47" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_bContCarrier</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1285d03dcb93305bc0df22cd1d422c9"></a><!-- doxytag: member="CCrazyRadio::m_fDeviceVersion" ref="aa1285d03dcb93305bc0df22cd1d422c9" args="" -->
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fDeviceVersion</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ed8e6a073892c2d662041deafcac857"></a><!-- doxytag: member="CCrazyRadio::m_nParameterCount" ref="a2ed8e6a073892c2d662041deafcac857" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nParameterCount</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57fb47ec556b1763c9fdcb7cdbbb1144"></a><!-- doxytag: member="CCrazyRadio::m_bUpdatesParameterCount" ref="a57fb47ec556b1763c9fdcb7cdbbb1144" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bUpdatesParameterCount</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7183a910027f15593b0edf33c51de7d9"></a><!-- doxytag: member="CCrazyRadio::m_lstTOCElements" ref="a7183a910027f15593b0edf33c51de7d9" args="" -->
-list&lt; struct <a class="el" href="struct_t_o_c_element.html">TOCElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lstTOCElements</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3034475ee484c5e5a2fb63db25f9b22"></a><!-- doxytag: member="CCrazyRadio::m_bPopulatesTOCCache" ref="ae3034475ee484c5e5a2fb63db25f9b22" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bPopulatesTOCCache</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36bdd50087b72cd5773dcc3998c5ee54"></a><!-- doxytag: member="CCrazyRadio::m_nLoggingVariableCount" ref="a36bdd50087b72cd5773dcc3998c5ee54" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nLoggingVariableCount</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5e9625f717baec88470b369421b2d5b"></a><!-- doxytag: member="CCrazyRadio::m_bUpdatesLogParameterCount" ref="ad5e9625f717baec88470b369421b2d5b" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bUpdatesLogParameterCount</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add79070232dd5e9238767824f27fdd0f"></a><!-- doxytag: member="CCrazyRadio::m_nNextLogVarID" ref="add79070232dd5e9238767824f27fdd0f" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nNextLogVarID</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aed4bbc2cff7bbe3cfb86cf8bf101e1cf"></a><!-- doxytag: member="CCrazyRadio::m_lstLOGElements" ref="aed4bbc2cff7bbe3cfb86cf8bf101e1cf" args="" -->
-list&lt; struct <a class="el" href="struct_l_o_g_element.html">LOGElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_lstLOGElements</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa4bf152571d575572bd6ed950851af0"></a><!-- doxytag: member="CCrazyRadio::m_bPopulatesLOGCache" ref="afa4bf152571d575572bd6ed950851af0" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bPopulatesLOGCache</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48fdf22c61b04974fe64e8e5b2b06ba0"></a><!-- doxytag: member="CCrazyRadio::m_bLogelementPopulated" ref="a48fdf22c61b04974fe64e8e5b2b06ba0" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bLogelementPopulated</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33705a933e283b5bb056dc25e45176e0"></a><!-- doxytag: member="CCrazyRadio::m_bAckReceived" ref="a33705a933e283b5bb056dc25e45176e0" args="" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAckReceived</b></td></tr>
 </table>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a503449d14ef7d2f3c63ed3a8f922bd9e"></a><!-- doxytag: member="CCrazyRadio::ackReceived" ref="a503449d14ef7d2f3c63ed3a8f922bd9e" args="()" -->
@@ -221,6 +137,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAckReceived</b></t
 <p>Whether or not the copter is answering sent packets. </p>
 <p>Returns whether the copter is actually answering sent packets with a set ACK flag. If this is not the case, it is either switched off or out of range.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the copter is returning the ACK flag properly, false otherwise. </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_a503449d14ef7d2f3c63ed3a8f922bd9e_icgraph.png" border="0" usemap="#class_c_crazy_radio_a503449d14ef7d2f3c63ed3a8f922bd9e_icgraph" alt=""/></div>
+<map name="class_c_crazy_radio_a503449d14ef7d2f3c63ed3a8f922bd9e_icgraph" id="class_c_crazy_radio_a503449d14ef7d2f3c63ed3a8f922bd9e_icgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#a6ebb6a13c7fbc350fcf15583b7345e19" title="Signals whether the copter is in range or not." alt="" coords="241,5,417,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -242,6 +167,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAckReceived</b></t
 <p>Checks if the USB read/write calls yielded any errors.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns true if the connection is working properly and false otherwise. </dd></dl>
 
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_a67274ed88cec66eebc5f74ec6f24a809_icgraph.png" border="0" usemap="#class_c_crazy_radio_a67274ed88cec66eebc5f74ec6f24a809_icgraph" alt=""/></div>
+<map name="class_c_crazy_radio_a67274ed88cec66eebc5f74ec6f24a809_icgraph" id="class_c_crazy_radio_a67274ed88cec66eebc5f74ec6f24a809_icgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations." alt="" coords="203,5,325,35"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -254,7 +188,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAckReceived</b></t
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -263,7 +197,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_bAckReceived</b></t
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue May 28 2013 17:13:40 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

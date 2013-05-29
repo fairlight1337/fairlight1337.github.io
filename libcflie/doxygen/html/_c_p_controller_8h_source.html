@@ -93,22 +93,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00032"></a>00032 <span class="preprocessor">#include &quot;CController.h&quot;</span>
 <a name="l00033"></a>00033 
 <a name="l00034"></a>00034 
-<a name="l00035"></a><a class="code" href="class_c_p_controller.html">00035</a> <span class="keyword">class </span><a class="code" href="class_c_p_controller.html">CPController</a> : <span class="keyword">public</span> <a class="code" href="class_c_controller.html">CController</a> {
-<a name="l00036"></a>00036  <span class="keyword">private</span>:
-<a name="l00037"></a>00037   <span class="keywordtype">float</span> m_fPGain;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039  <span class="keyword">public</span>:
-<a name="l00040"></a>00040   <a class="code" href="class_c_p_controller.html">CPController</a>();
-<a name="l00041"></a>00041   ~<a class="code" href="class_c_p_controller.html">CPController</a>();
-<a name="l00042"></a>00042   
-<a name="l00043"></a>00043   <span class="keyword">virtual</span> <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a> inputSignalForDesiredPose(struct DSPose dspCurrent, struct DSControlSetPoint cspDesired);
-<a name="l00044"></a>00044   
-<a name="l00045"></a>00045   <span class="keywordtype">void</span> setPGain(<span class="keywordtype">float</span> fPGain);
-<a name="l00046"></a>00046   <span class="keywordtype">float</span> pGain();
-<a name="l00047"></a>00047 };
-<a name="l00048"></a>00048 
-<a name="l00049"></a>00049 
-<a name="l00050"></a>00050 <span class="preprocessor">#endif </span><span class="comment">/* __C_PCONTROLLER_H__ */</span>
+<a name="l00040"></a><a class="code" href="class_c_p_controller.html">00040</a> <span class="keyword">class </span><a class="code" href="class_c_p_controller.html" title="Simple P gain based controller class.">CPController</a> : <span class="keyword">public</span> <a class="code" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers.">CController</a> {
+<a name="l00041"></a>00041  <span class="keyword">private</span>:
+<a name="l00043"></a>00043   <span class="keywordtype">float</span> m_fPGain;
+<a name="l00044"></a>00044 
+<a name="l00045"></a>00045  <span class="keyword">public</span>:
+<a name="l00049"></a>00049   <a class="code" href="class_c_p_controller.html#a6f45014476c7bc9cb2b374b808cfaab0" title="Constructor for the P gain based controller.">CPController</a>();
+<a name="l00051"></a>00051   <a class="code" href="class_c_p_controller.html#a0c211229f91d516a9758f42b2aa85cec" title="Destructor for the P gain based controller.">~CPController</a>();
+<a name="l00052"></a>00052   
+<a name="l00053"></a>00053   <span class="keyword">virtual</span> <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> inputSignalForDesiredPosition(struct DSPose dspCurrent, struct DSControlSetPoint cspDesired);
+<a name="l00054"></a>00054 
+<a name="l00069"></a>00069   <span class="keywordtype">void</span> <a class="code" href="class_c_p_controller.html#a54db638fc8d68bb5fcc90acf2a436022" title="Sets the proportional gain constant for the controller.">setPGain</a>(<span class="keywordtype">float</span> fPGain);
+<a name="l00076"></a>00076   <span class="keywordtype">float</span> <a class="code" href="class_c_p_controller.html#a1c836dc981159e95282ce3e58a088746" title="Returns the proportional gain constant for the controller.">pGain</a>();
+<a name="l00077"></a>00077 };
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 
+<a name="l00080"></a>00080 <span class="preprocessor">#endif </span><span class="comment">/* __C_PCONTROLLER_H__ */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -116,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -125,7 +125,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue May 28 2013 17:13:40 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

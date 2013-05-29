@@ -60,43 +60,178 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a>  </div>
+<a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">CPController Class Reference</div>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="CPController" --><!-- doxytag: inherits="CController" --><div class="dynheader">
+<!-- doxytag: class="CPController" --><!-- doxytag: inherits="CController" -->
+<p>Simple P gain based controller class.  
+ <a href="class_c_p_controller.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_c_p_controller_8h_source.html">CPController.h</a>&gt;</code></p>
+<div class="dynheader">
 Inheritance diagram for CPController:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_p_controller__inherit__graph.png" border="0" usemap="#_c_p_controller_inherit__map" alt="Inheritance graph"/></div>
 <map name="_c_p_controller_inherit__map" id="_c_p_controller_inherit__map">
-<area shape="rect" id="node2" href="class_c_controller.html" title="CController" alt="" coords="9,5,97,35"/></map>
+<area shape="rect" id="node2" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="9,5,97,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
 Collaboration diagram for CPController:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_p_controller__coll__graph.png" border="0" usemap="#_c_p_controller_coll__map" alt="Collaboration graph"/></div>
 <map name="_c_p_controller_coll__map" id="_c_p_controller_coll__map">
-<area shape="rect" id="node2" href="class_c_controller.html" title="CController" alt="" coords="9,5,97,35"/></map>
+<area shape="rect" id="node2" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="9,5,97,35"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="class_c_p_controller-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0906f1f40673615a7ce1da6913a122b9"></a><!-- doxytag: member="CPController::inputSignalForDesiredPose" ref="a0906f1f40673615a7ce1da6913a122b9" args="(struct DSPose dspCurrent, struct DSControlSetPoint cspDesired)" -->
-virtual struct <br class="typebreak"/>
-<a class="el" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><b>inputSignalForDesiredPose</b> (struct <a class="el" href="struct_d_s_pose.html">DSPose</a> dspCurrent, struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a> cspDesired)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54db638fc8d68bb5fcc90acf2a436022"></a><!-- doxytag: member="CPController::setPGain" ref="a54db638fc8d68bb5fcc90acf2a436022" args="(float fPGain)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setPGain</b> (float fPGain)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c836dc981159e95282ce3e58a088746"></a><!-- doxytag: member="CPController::pGain" ref="a1c836dc981159e95282ce3e58a088746" args="()" -->
-float&#160;</td><td class="memItemRight" valign="bottom"><b>pGain</b> ()</td></tr>
-<tr><td colspan="2"><h2><a name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6b3f37d83952f6e8c34509f636c14ab"></a><!-- doxytag: member="CPController::m_fPGain" ref="ac6b3f37d83952f6e8c34509f636c14ab" args="" -->
-float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPGain</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_controller.html#a6f45014476c7bc9cb2b374b808cfaab0">CPController</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for the P gain based controller.  <a href="#a6f45014476c7bc9cb2b374b808cfaab0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c211229f91d516a9758f42b2aa85cec"></a><!-- doxytag: member="CPController::~CPController" ref="a0c211229f91d516a9758f42b2aa85cec" args="()" -->
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_controller.html#a0c211229f91d516a9758f42b2aa85cec">~CPController</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the P gain based controller. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual struct <br class="typebreak"/>
+<a class="el" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_controller.html#abad6eb9cf9ec615f0b42c2d937192282">inputSignalForDesiredPosition</a> (struct <a class="el" href="struct_d_s_pose.html">DSPose</a> dspCurrent, struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a> cspDesired)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the current controller output signal.  <a href="#abad6eb9cf9ec615f0b42c2d937192282"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_controller.html#a54db638fc8d68bb5fcc90acf2a436022">setPGain</a> (float fPGain)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the proportional gain constant for the controller.  <a href="#a54db638fc8d68bb5fcc90acf2a436022"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_controller.html#a1c836dc981159e95282ce3e58a088746">pGain</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the proportional gain constant for the controller.  <a href="#a1c836dc981159e95282ce3e58a088746"></a><br/></td></tr>
 </table>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Simple P gain based controller class. </p>
+<p>Simple controller that calculates the control signal (copter angles/thrust) based on the linear difference between the current pose and the set point. </p>
+</div><hr/><h2>Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a6f45014476c7bc9cb2b374b808cfaab0"></a><!-- doxytag: member="CPController::CPController" ref="a6f45014476c7bc9cb2b374b808cfaab0" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPController::CPController </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Constructor for the P gain based controller. </p>
+<p>Sets the default proportional constant to p = 0.5. </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_controller_a6f45014476c7bc9cb2b374b808cfaab0_cgraph.png" border="0" usemap="#class_c_p_controller_a6f45014476c7bc9cb2b374b808cfaab0_cgraph" alt=""/></div>
+<map name="class_c_p_controller_a6f45014476c7bc9cb2b374b808cfaab0_cgraph" id="class_c_p_controller_a6f45014476c7bc9cb2b374b808cfaab0_cgraph">
+<area shape="rect" id="node3" href="class_c_p_controller.html#a54db638fc8d68bb5fcc90acf2a436022" title="Sets the proportional gain constant for the controller." alt="" coords="236,5,393,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="abad6eb9cf9ec615f0b42c2d937192282"></a><!-- doxytag: member="CPController::inputSignalForDesiredPosition" ref="abad6eb9cf9ec615f0b42c2d937192282" args="(struct DSPose dspCurrent, struct DSControlSetPoint cspDesired)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="struct_d_s_velocity_control_signal.html">DSVelocityControlSignal</a> CPController::inputSignalForDesiredPosition </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="struct_d_s_pose.html">DSPose</a>&#160;</td>
+          <td class="paramname"><em>dspCurrent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a>&#160;</td>
+          <td class="paramname"><em>cspDesired</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [read, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Calculates the current controller output signal. </p>
+<p>The control signal depends on the current pose of the copter, as well, as the desired set point given as <a class="el" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a>. For more elaborate controllers, it might also depend on an internal controller state. The return value is a <a class="el" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> in which the angular twist as well as the thrust to be sent to the copter's internal controller is stored.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dspCurrent</td><td>The current pose of the copter. This is supplied by an instance of the governing class, i.e. <a class="el" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> </td></tr>
+    <tr><td class="paramname">cspDesired</td><td>Denoted the desired set point, consisting of R^3 position and optional yaw (depending on the <a class="el" href="class_c_controller.html#ad1f70463438608f1771bae629f6ae5ec" title="Returns whether yaw control is ignored.">ignoresYaw()</a> value)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns the controller output signal, containing absolute roll, pitch, yaw and thrust values to be sent to the copter. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_c_controller.html#a7508b4bc11e4894983e906e2bb729162">CController</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c836dc981159e95282ce3e58a088746"></a><!-- doxytag: member="CPController::pGain" ref="a1c836dc981159e95282ce3e58a088746" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float CPController::pGain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Returns the proportional gain constant for the controller. </p>
+<p>Returns the internally stored proportional gain value for the P-gain based control algorithm.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>pGain Returns the proportional gain constant </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a54db638fc8d68bb5fcc90acf2a436022"></a><!-- doxytag: member="CPController::setPGain" ref="a54db638fc8d68bb5fcc90acf2a436022" args="(float fPGain)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CPController::setPGain </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>fPGain</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sets the proportional gain constant for the controller. </p>
+<p>This influences the 'aggressiveness' of the controller.</p>
+<p>Values &gt; 1 will render the controller unstable due to over-proportional overshoot, &lt; 1 will invert it's purpose (i.e. move away from the set point and also become unstable). Setting it to zero switches off the control ability.</p>
+<p>Valid values are between 0 &lt; p &lt; 1. The exact value depends on the purpose and should be tried out. Start at around p = 0.5.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fPGain</td><td>The proportional gain constant to be set for the controller </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_p_controller_a54db638fc8d68bb5fcc90acf2a436022_icgraph.png" border="0" usemap="#class_c_p_controller_a54db638fc8d68bb5fcc90acf2a436022_icgraph" alt=""/></div>
+<map name="class_c_p_controller_a54db638fc8d68bb5fcc90acf2a436022_icgraph" id="class_c_p_controller_a54db638fc8d68bb5fcc90acf2a436022_icgraph">
+<area shape="rect" id="node3" href="class_c_p_controller.html#a6f45014476c7bc9cb2b374b808cfaab0" title="Constructor for the P gain based controller." alt="" coords="215,5,393,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/cflie/<a class="el" href="_c_p_controller_8h_source.html">CPController.h</a></li>
 <li>src/cflie/CPController.cpp</li>
@@ -107,7 +242,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPGain</b></td></t
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -116,7 +251,7 @@ float&#160;</td><td class="memItemRight" valign="bottom"><b>m_fPGain</b></td></t
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Tue May 28 2013 17:13:40 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
