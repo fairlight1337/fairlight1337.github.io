@@ -90,45 +90,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00029"></a>00029 <span class="preprocessor"></span><span class="preprocessor">#define __DATA_STRUCTURES_H__</span>
 <a name="l00030"></a>00030 <span class="preprocessor"></span>
 <a name="l00031"></a>00031 
-<a name="l00040"></a><a class="code" href="struct_d_s_vector.html">00040</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> {
-<a name="l00041"></a>00041   <span class="keywordtype">float</span> fX;
-<a name="l00042"></a>00042   <span class="keywordtype">float</span> fY;
-<a name="l00043"></a>00043   <span class="keywordtype">float</span> fZ;
-<a name="l00044"></a>00044 };
+<a name="l00036"></a><a class="code" href="struct_d_s_vector.html">00036</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> {
+<a name="l00038"></a><a class="code" href="struct_d_s_vector.html#a7c08b909c8ce8e00ad50406ea7324431">00038</a>   <span class="keywordtype">float</span> <a class="code" href="struct_d_s_vector.html#a7c08b909c8ce8e00ad50406ea7324431" title="Extend in X direction.">fX</a>;
+<a name="l00040"></a><a class="code" href="struct_d_s_vector.html#a45ff5a1c0edc7aca2f8b217b2450c533">00040</a>   <span class="keywordtype">float</span> <a class="code" href="struct_d_s_vector.html#a45ff5a1c0edc7aca2f8b217b2450c533" title="Extend in Y direction.">fY</a>;
+<a name="l00042"></a><a class="code" href="struct_d_s_vector.html#ac26bf6bb7a9f3b2f70c1e2c1da142167">00042</a>   <span class="keywordtype">float</span> <a class="code" href="struct_d_s_vector.html#ac26bf6bb7a9f3b2f70c1e2c1da142167" title="Extend in Z direction.">fZ</a>;
+<a name="l00043"></a>00043 };
+<a name="l00044"></a>00044 
 <a name="l00045"></a>00045 
-<a name="l00046"></a>00046 
-<a name="l00055"></a><a class="code" href="struct_d_s_orientation.html">00055</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> {
-<a name="l00056"></a>00056   <span class="keywordtype">float</span> fRoll;
-<a name="l00057"></a>00057   <span class="keywordtype">float</span> fPitch;
-<a name="l00058"></a>00058   <span class="keywordtype">float</span> fYaw;
-<a name="l00059"></a>00059 };
-<a name="l00060"></a>00060 
-<a name="l00061"></a>00061 
-<a name="l00069"></a><a class="code" href="struct_d_s_pose.html">00069</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_pose.html" title="Struct describing position and orientation.">DSPose</a> {
-<a name="l00070"></a>00070   <span class="keyword">struct </span><a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition;
-<a name="l00071"></a>00071   <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> dsoOrientation;
+<a name="l00050"></a><a class="code" href="struct_d_s_orientation.html">00050</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> {
+<a name="l00052"></a><a class="code" href="struct_d_s_orientation.html#aae2a4d0038b53f957c63ef1a66dbe261">00052</a>   <span class="keywordtype">float</span> <a class="code" href="struct_d_s_orientation.html#aae2a4d0038b53f957c63ef1a66dbe261">fRoll</a>;
+<a name="l00054"></a><a class="code" href="struct_d_s_orientation.html#a56feb5cfa24739868e3c4d6cca1b508f">00054</a>   <span class="keywordtype">float</span> <a class="code" href="struct_d_s_orientation.html#a56feb5cfa24739868e3c4d6cca1b508f">fPitch</a>;
+<a name="l00056"></a><a class="code" href="struct_d_s_orientation.html#a01f2f50fd5b1add7a7fe74a830b2c113">00056</a>   <span class="keywordtype">float</span> <a class="code" href="struct_d_s_orientation.html#a01f2f50fd5b1add7a7fe74a830b2c113">fYaw</a>;
+<a name="l00057"></a>00057 };
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 
+<a name="l00067"></a><a class="code" href="struct_d_s_pose.html">00067</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_pose.html" title="Struct describing position and orientation.">DSPose</a> {
+<a name="l00069"></a><a class="code" href="struct_d_s_pose.html#a340c8464c6679edceb445ed99a083ffa">00069</a>   <span class="keyword">struct </span><a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> <a class="code" href="struct_d_s_pose.html#a340c8464c6679edceb445ed99a083ffa" title="Vector denoting the position in R^3.">dsvPosition</a>;
+<a name="l00071"></a><a class="code" href="struct_d_s_pose.html#a9184ef86503ebf87dca7161d631272d6">00071</a>   <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> <a class="code" href="struct_d_s_pose.html#a9184ef86503ebf87dca7161d631272d6" title="Orientation vector denoting the orientation in R^3.">dsoOrientation</a>;
 <a name="l00072"></a>00072 };
 <a name="l00073"></a>00073 
 <a name="l00074"></a>00074 
-<a name="l00082"></a><a class="code" href="struct_d_s_twist.html">00082</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_twist.html" title="Struct describing linear and angular twist.">DSTwist</a> {
-<a name="l00083"></a>00083   <span class="keyword">struct </span><a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvLinear;
-<a name="l00084"></a>00084   <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> dsoAngular;
-<a name="l00085"></a>00085 };
+<a name="l00079"></a><a class="code" href="struct_d_s_twist.html">00079</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_twist.html" title="Struct describing linear and angular twist.">DSTwist</a> {
+<a name="l00081"></a><a class="code" href="struct_d_s_twist.html#acc773147d5dda788ba42630509a1dd85">00081</a>   <span class="keyword">struct </span><a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> <a class="code" href="struct_d_s_twist.html#acc773147d5dda788ba42630509a1dd85" title="Linear velocity in R^3.">dsvLinear</a>;
+<a name="l00083"></a><a class="code" href="struct_d_s_twist.html#aede434b5c384749d1b1f2ecf69ec428e">00083</a>   <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> <a class="code" href="struct_d_s_twist.html#aede434b5c384749d1b1f2ecf69ec428e" title="Angular velocity in R^3.">dsoAngular</a>;
+<a name="l00084"></a>00084 };
+<a name="l00085"></a>00085 
 <a name="l00086"></a>00086 
-<a name="l00087"></a>00087 
-<a name="l00096"></a><a class="code" href="struct_d_s_velocity_control_signal.html">00096</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> {
-<a name="l00097"></a>00097   <span class="keywordtype">int</span> nThrust;
-<a name="l00098"></a>00098   <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> dsoAngular;
-<a name="l00099"></a>00099 };
-<a name="l00100"></a>00100 
-<a name="l00101"></a>00101 
-<a name="l00112"></a><a class="code" href="struct_d_s_control_set_point.html">00112</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> {
-<a name="l00113"></a>00113   <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition;
-<a name="l00114"></a>00114   <span class="keywordtype">float</span> fYaw;
-<a name="l00115"></a>00115 };
+<a name="l00092"></a><a class="code" href="struct_d_s_velocity_control_signal.html">00092</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> {
+<a name="l00094"></a><a class="code" href="struct_d_s_velocity_control_signal.html#abd6f4ea33d0ac017a13f13e0530d6f68">00094</a>   <span class="keywordtype">int</span> <a class="code" href="struct_d_s_velocity_control_signal.html#abd6f4ea33d0ac017a13f13e0530d6f68" title="The amount of thrust to give to the copter controller.">nThrust</a>;
+<a name="l00096"></a><a class="code" href="struct_d_s_velocity_control_signal.html#ad44383eae47cfae3bac3aa872f509f32">00096</a>   <span class="keyword">struct </span><a class="code" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation.">DSOrientation</a> <a class="code" href="struct_d_s_velocity_control_signal.html#ad44383eae47cfae3bac3aa872f509f32" title="The fixed angles to give to the copter controller.">dsoAngular</a>;
+<a name="l00097"></a>00097 };
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 
+<a name="l00108"></a><a class="code" href="struct_d_s_control_set_point.html">00108</a> <span class="keyword">struct </span><a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> {
+<a name="l00110"></a><a class="code" href="struct_d_s_control_set_point.html#a32954a4f33f12971564d496368ff6035">00110</a>   <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> <a class="code" href="struct_d_s_control_set_point.html#a32954a4f33f12971564d496368ff6035" title="The set point position to reach (control goal)">dsvPosition</a>;
+<a name="l00113"></a><a class="code" href="struct_d_s_control_set_point.html#a50824f7168376067a361f6ad3c69ca9a">00113</a>   <span class="keywordtype">float</span> <a class="code" href="struct_d_s_control_set_point.html#a50824f7168376067a361f6ad3c69ca9a" title="The yaw to achieve (control goal, if option is enabled)">fYaw</a>;
+<a name="l00114"></a>00114 };
+<a name="l00115"></a>00115 
 <a name="l00116"></a>00116 
-<a name="l00117"></a>00117 
-<a name="l00118"></a>00118 <span class="preprocessor">#endif </span><span class="comment">/* __DATA_STRUCTURES_H__ */</span>
+<a name="l00117"></a>00117 <span class="preprocessor">#endif </span><span class="comment">/* __DATA_STRUCTURES_H__ */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -136,7 +136,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -145,7 +145,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:51:36 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 11:02:54 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
