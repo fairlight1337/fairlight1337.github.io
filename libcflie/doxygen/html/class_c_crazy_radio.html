@@ -66,14 +66,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="CCrazyRadio" -->
+<p>Communication class to connect to and communicate via the CrazyRadio USB dongle.  
+ <a href="class_c_crazy_radio.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_c_crazy_radio_8h_source.html">CCrazyRadio.h</a>&gt;</code></p>
+
 <p><a href="class_c_crazy_radio-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80f4d867e098acd0095501f0ef563a7f"></a><!-- doxytag: member="CCrazyRadio::CCrazyRadio" ref="a80f4d867e098acd0095501f0ef563a7f" args="(string strRadioIdentifier)" -->
 &#160;</td><td class="memItemRight" valign="bottom"><b>CCrazyRadio</b> (string strRadioIdentifier)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0dd3f073f2b45ddde7ec91fd8fb741b5"></a><!-- doxytag: member="CCrazyRadio::startRadio" ref="a0dd3f073f2b45ddde7ec91fd8fb741b5" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>startRadio</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#a0dd3f073f2b45ddde7ec91fd8fb741b5">startRadio</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to start the radio communication.  <a href="#a0dd3f073f2b45ddde7ec91fd8fb741b5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1e3c51f6e3f2cdd146fde6760a4fa87"></a><!-- doxytag: member="CCrazyRadio::power" ref="ad1e3c51f6e3f2cdd146fde6760a4fa87" args="()" -->
 enum Power&#160;</td><td class="memItemRight" valign="bottom"><b>power</b> ()</td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51a89fcafff3e246209b4aecb00c2730"></a><!-- doxytag: member="CCrazyRadio::setPower" ref="a51a89fcafff3e246209b4aecb00c2730" args="(enum Power enumPower)" -->
@@ -119,7 +124,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>countLOGElements</b> (
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809">usbOK</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the USB connection is still operational.  <a href="#a67274ed88cec66eebc5f74ec6f24a809"></a><br/></td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
+<hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
+<div class="textblock"><p>Communication class to connect to and communicate via the CrazyRadio USB dongle. </p>
+<p>The class is capable of finding the CrazyRadio USB dongle on the host computer, open and maintain a connection, and send/receive data when communicating with the Crazyflie Nano copter using the Crazy Radio Transfer Protocol as defined by Bitcraze. </p>
+</div><hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a503449d14ef7d2f3c63ed3a8f922bd9e"></a><!-- doxytag: member="CCrazyRadio::ackReceived" ref="a503449d14ef7d2f3c63ed3a8f922bd9e" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -146,6 +154,26 @@ Here is the caller graph for this function:</div>
 <area shape="rect" id="node3" href="class_c_crazyflie.html#a6ebb6a13c7fbc350fcf15583b7345e19" title="Signals whether the copter is in range or not." alt="" coords="241,5,417,35"/></map>
 </div>
 </p>
+
+</div>
+</div>
+<a class="anchor" id="a0dd3f073f2b45ddde7ec91fd8fb741b5"></a><!-- doxytag: member="CCrazyRadio::startRadio" ref="a0dd3f073f2b45ddde7ec91fd8fb741b5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CCrazyRadio::startRadio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Function to start the radio communication. </p>
+<p>The first available USB dongle will be opened and claimed for communication. The connection will be maintained and used to communicate with a Crazyflie Nano quadcopter in range.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Returns 'true' if the connection could successfully be made and 'false' if no dongle could be found (or any other USB-related error came up - this is not handled here). </dd></dl>
 
 </div>
 </div>
@@ -197,7 +225,7 @@ Here is the caller graph for this function:</div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:51:36 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

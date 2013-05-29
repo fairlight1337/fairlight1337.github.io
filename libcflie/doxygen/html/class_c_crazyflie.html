@@ -75,7 +75,7 @@ Collaboration diagram for CCrazyflie:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_crazyflie__coll__graph.png" border="0" usemap="#_c_crazyflie_coll__map" alt="Collaboration graph"/></div>
 <map name="_c_crazyflie_coll__map" id="_c_crazyflie_coll__map">
-<area shape="rect" id="node2" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="5,101,139,131"/><area shape="rect" id="node4" href="struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="223,5,300,35"/><area shape="rect" id="node8" href="struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="529,101,601,131"/><area shape="rect" id="node15" href="struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="288,101,357,131"/><area shape="rect" id="node6" href="class_c_crazy_radio.html" title="CCrazyRadio" alt="" coords="163,101,264,131"/><area shape="rect" id="node10" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="455,5,559,35"/><area shape="rect" id="node13" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="408,101,496,131"/></map>
+<area shape="rect" id="node2" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="5,101,139,131"/><area shape="rect" id="node4" href="struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="223,5,300,35"/><area shape="rect" id="node8" href="struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="529,101,601,131"/><area shape="rect" id="node15" href="struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="288,101,357,131"/><area shape="rect" id="node6" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle." alt="" coords="163,101,264,131"/><area shape="rect" id="node10" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="455,5,559,35"/><area shape="rect" id="node13" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="408,101,496,131"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="class_c_crazyflie-members.html">List of all members.</a></p>
@@ -157,10 +157,10 @@ Public Member Functions</h2></td></tr>
 <div class="memdoc">
 
 <p>Constructor for the copter convenience class. </p>
-<p>Constructor for the <a class="el" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> class, taking a <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a> radio interface instance as a parameter.</p>
+<p>Constructor for the <a class="el" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> class, taking a <a class="el" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle.">CCrazyRadio</a> radio interface instance as a parameter.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">crRadio</td><td>Initialized (and started) instance of the <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a> class, denoting the USB dongle to communicate with. </td></tr>
+    <tr><td class="paramname">crRadio</td><td>Initialized (and started) instance of the <a class="el" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle.">CCrazyRadio</a> class, denoting the USB dongle to communicate with. </td></tr>
   </table>
   </dd>
 </dl>
@@ -191,7 +191,7 @@ Here is the call graph for this function:</div>
 <div class="memdoc">
 
 <p>Destructor for the copter convenience class. </p>
-<p>Destructor, deleting all internal variables (except for the <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a> radio instance given in the constructor). </p>
+<p>Destructor, deleting all internal variables (except for the <a class="el" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle.">CCrazyRadio</a> radio instance given in the constructor). </p>
 
 </div>
 </div>
@@ -464,7 +464,7 @@ Here is the caller graph for this function:</div>
 <p>Because of the nature of drifting integration errors when summing up velocity sensor readings and the connected uncertainty, this positioning method is bound to be imperfect. It can be used as an approximation if one does not need perfect localization though.</p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
-    <tr><td class="paramname">dsvRelative</td><td>The absolute R^3 position to go to (given in meters) </td></tr>
+    <tr><td class="paramname">dsvAbsolute</td><td>The absolute R^3 position to go to (given in meters) </td></tr>
   </table>
   </dd>
 </dl>
@@ -927,7 +927,7 @@ Here is the call graph for this function:</div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:32:23 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 09:51:36 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
