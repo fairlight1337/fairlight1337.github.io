@@ -161,19 +161,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00139"></a>00139   <span class="keywordtype">void</span> setPower(<span class="keyword">enum</span> Power enumPower);
 <a name="l00140"></a>00140   
 <a name="l00145"></a>00145   <a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *sendPacket(<a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *crtpSend, <span class="keywordtype">bool</span> bDeleteAfterwards = <span class="keyword">false</span>);
-<a name="l00146"></a>00146   <a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *sendAndReceive(<a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *crtpSend, <span class="keywordtype">bool</span> bDeleteAfterwards = <span class="keyword">false</span>);
-<a name="l00147"></a>00147   <a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *sendAndReceive(<a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *crtpSend, <span class="keywordtype">int</span> nPort, <span class="keywordtype">int</span> nChannel, <span class="keywordtype">bool</span> bDeleteAfterwards = <span class="keyword">true</span>, <span class="keywordtype">int</span> nRetries = 10, <span class="keywordtype">int</span> nMicrosecondsWait = 100);
-<a name="l00148"></a>00148   
-<a name="l00156"></a>00156   <span class="keywordtype">bool</span> ackReceived();
-<a name="l00163"></a>00163   <span class="keywordtype">bool</span> usbOK();
-<a name="l00164"></a>00164   <a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *waitForPacket();
-<a name="l00165"></a>00165   list&lt;CCRTPPacket*&gt; popLoggingPackets();
-<a name="l00166"></a>00166   
-<a name="l00167"></a>00167   <span class="keywordtype">bool</span> sendDummyPacket();
-<a name="l00168"></a>00168 };
-<a name="l00169"></a>00169 
-<a name="l00170"></a>00170 
-<a name="l00171"></a>00171 <span class="preprocessor">#endif </span><span class="comment">/* __C_CRAZY_RADIO_H__ */</span>
+<a name="l00146"></a>00146   
+<a name="l00159"></a>00159   <a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *sendAndReceive(<a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *crtpSend, <span class="keywordtype">bool</span> bDeleteAfterwards = <span class="keyword">false</span>);
+<a name="l00160"></a>00160   
+<a name="l00182"></a>00182   <a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *sendAndReceive(<a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *crtpSend, <span class="keywordtype">int</span> nPort, <span class="keywordtype">int</span> nChannel, <span class="keywordtype">bool</span> bDeleteAfterwards = <span class="keyword">true</span>, <span class="keywordtype">int</span> nRetries = 10, <span class="keywordtype">int</span> nMicrosecondsWait = 100);
+<a name="l00183"></a>00183   
+<a name="l00191"></a>00191   <span class="keywordtype">bool</span> sendDummyPacket();
+<a name="l00192"></a>00192   
+<a name="l00199"></a>00199   <a class="code" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> *waitForPacket();
+<a name="l00200"></a>00200   
+<a name="l00208"></a>00208   <span class="keywordtype">bool</span> ackReceived();
+<a name="l00215"></a>00215   <span class="keywordtype">bool</span> usbOK();
+<a name="l00216"></a>00216   
+<a name="l00225"></a>00225   list&lt;CCRTPPacket*&gt; popLoggingPackets();
+<a name="l00226"></a>00226 };
+<a name="l00227"></a>00227 
+<a name="l00228"></a>00228 
+<a name="l00229"></a>00229 <span class="preprocessor">#endif </span><span class="comment">/* __C_CRAZY_RADIO_H__ */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -190,7 +194,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 07:16:28 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 08:32:08 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

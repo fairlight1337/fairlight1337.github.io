@@ -53,7 +53,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -75,7 +74,7 @@ Collaboration diagram for CCrazyflie:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_crazyflie__coll__graph.png" border="0" usemap="#_c_crazyflie_coll__map" alt="Collaboration graph"/></div>
 <map name="_c_crazyflie_coll__map" id="_c_crazyflie_coll__map">
-<area shape="rect" id="node2" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="192,101,325,131"/><area shape="rect" id="node4" href="struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="320,5,397,35"/><area shape="rect" id="node11" href="struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="349,101,421,131"/><area shape="rect" id="node18" href="struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="607,101,676,131"/><area shape="rect" id="node6" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle." alt="" coords="5,5,107,35"/><area shape="rect" id="node8" href="class_c_t_o_c.html" title="CTOC" alt="" coords="103,101,161,131"/><area shape="rect" id="node13" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="543,5,647,35"/><area shape="rect" id="node16" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="473,101,561,131"/></map>
+<area shape="rect" id="node2" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle." alt="" coords="15,5,116,35"/><area shape="rect" id="node4" href="class_c_t_o_c.html" title="CTOC" alt="" coords="113,101,172,131"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="class_c_crazyflie-members.html">List of all members.</a></p>
@@ -89,99 +88,33 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a7cf9260f6548fe6a95918fb5c065555f">setThrust</a> (int nThrust)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the thrust control set point.  <a href="#a7cf9260f6548fe6a95918fb5c065555f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a5db5a4b65c5d3fc1092e0ab27d4165f7">thrust</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current thrust control set point.  <a href="#a5db5a4b65c5d3fc1092e0ab27d4165f7"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current thrust.  <a href="#a5db5a4b65c5d3fc1092e0ab27d4165f7"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a075b70133925cce439389a0255e4fc25">setRoll</a> (float fRoll)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the roll control set point.  <a href="#a075b70133925cce439389a0255e4fc25"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a57ba541cb966937036eeb7ef2109dfe0">roll</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current roll control set point.  <a href="#a57ba541cb966937036eeb7ef2109dfe0"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current roll.  <a href="#a57ba541cb966937036eeb7ef2109dfe0"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a5aa2c1bb82eeee91e8944a131cc75cf9">setPitch</a> (float fPitch)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the pitch control set point.  <a href="#a5aa2c1bb82eeee91e8944a131cc75cf9"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a42059530824eeb68364cd977bfb84dbd">pitch</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current pitch control set point.  <a href="#a42059530824eeb68364cd977bfb84dbd"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current pitch.  <a href="#a42059530824eeb68364cd977bfb84dbd"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a536cde169cf3f8033aab099d475e440f">setYaw</a> (float fYaw)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the yaw control set point.  <a href="#a536cde169cf3f8033aab099d475e440f"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a843d4bc976670b7a416654ff2ca08271">yaw</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current yaw control set point.  <a href="#a843d4bc976670b7a416654ff2ca08271"></a><br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current yaw.  <a href="#a843d4bc976670b7a416654ff2ca08271"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a">cycle</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages internal calculation operations.  <a href="#ae0239a20be1dc90ea0588a45cb4a269a"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a6ebb6a13c7fbc350fcf15583b7345e19">copterInRange</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals whether the copter is in range or not.  <a href="#a6ebb6a13c7fbc350fcf15583b7345e19"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#ae6c6bfd5e202fd3a06118025cb673e0f">disableController</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Switches off the current controller.  <a href="#ae6c6bfd5e202fd3a06118025cb673e0f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a28cdd3a2f72ea3ba3efe5b40fc729cd6">setPController</a> (float fPGain)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects the P gain based controller as active controller.  <a href="#a28cdd3a2f72ea3ba3efe5b40fc729cd6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a014e4a15e7a46e111d1887149b4f9f43">setDesiredSetPoint</a> (struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a> cspDesired)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the desired set point, i.e. position and yaw.  <a href="#a014e4a15e7a46e111d1887149b4f9f43"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a747f2375b58b112cb79af982ac4973dc">distanceBetweenPositions</a> (struct <a class="el" href="struct_d_s_vector.html">DSVector</a> dsvPosition1, struct <a class="el" href="struct_d_s_vector.html">DSVector</a> dsvPosition2)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between two physical positions.  <a href="#a747f2375b58b112cb79af982ac4973dc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#af8ed1c504299ecda3e835a4009afe3c6">distanceToPosition</a> (struct <a class="el" href="struct_d_s_vector.html">DSVector</a> dsvPosition)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between the current and the given physical position.  <a href="#af8ed1c504299ecda3e835a4009afe3c6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#ac8db590372842ff6a7f7391fc76bc551">distanceToDesiredPosition</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the distance between the current and the desired physical position.  <a href="#ac8db590372842ff6a7f7391fc76bc551"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#ae9d35a3a91b49f8c253985a529405c75">goToRelativePosition</a> (struct <a class="el" href="struct_d_s_vector.html">DSVector</a> dsvRelative)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the desired relative copter position.  <a href="#ae9d35a3a91b49f8c253985a529405c75"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a1bd50cee01da8e895cf6078e61c30a63">goToAbsolutePosition</a> (struct <a class="el" href="struct_d_s_vector.html">DSVector</a> dsvAbsolute)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the desired absolute copter position.  <a href="#a1bd50cee01da8e895cf6078e61c30a63"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a02f17beaddb51be4f0806484a93cf1fa">isAtDesiredPosition</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the copter has reached it's desired position.  <a href="#a02f17beaddb51be4f0806484a93cf1fa"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a5b6f152b95137346a2da4c28ba9d8a40">isAtDesiredPosition</a> (float fThreshold)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the copter has reached it's desired position, given a custom threshold value.  <a href="#a5b6f152b95137346a2da4c28ba9d8a40"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a8155bd5f1595d3d96a7df418e71fa2b3">setArrivalThreshold</a> (float fArrivalThreshold)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the internal threshold value for arrival checking.  <a href="#a8155bd5f1595d3d96a7df418e71fa2b3"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a10ab497cc9a6dc926b44ebbc85d2d3f8">arrivalThreshold</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The current arrival threshold value.  <a href="#a10ab497cc9a6dc926b44ebbc85d2d3f8"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a24e35e842b9bb4d0d05f180de6ab6755">setControllerIgnoresYaw</a> (bool bControllerIgnoresYaw)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Globally sets whether controllers ignore yaw control.  <a href="#a24e35e842b9bb4d0d05f180de6ab6755"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a49ca10991310aefaabf622a276d70e5e">controllerIgnoresYaw</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals whether or not the yaw control is ignored in controllers.  <a href="#a49ca10991310aefaabf622a276d70e5e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#abd473cda70c8d18da37d69252dc2a188">relocalize</a> ()</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the current pose to the origin pose.  <a href="#abd473cda70c8d18da37d69252dc2a188"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f174585c4bcd8933f47917c1ec68e2c"></a><!-- doxytag: member="CCrazyflie::isInitialized" ref="a1f174585c4bcd8933f47917c1ec68e2c" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInitialized</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acea921d7d7a4802255da16b3b91797bf"></a><!-- doxytag: member="CCrazyflie::startLogging" ref="acea921d7d7a4802255da16b3b91797bf" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>startLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b6698da9328cd9054e2c59a73bb34fb"></a><!-- doxytag: member="CCrazyflie::addHighSpeedLogging" ref="a2b6698da9328cd9054e2c59a73bb34fb" args="(string strName)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addHighSpeedLogging</b> (string strName)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfc80a23816dd32fad52e86f470438ed"></a><!-- doxytag: member="CCrazyflie::addLowSpeedLogging" ref="abfc80a23816dd32fad52e86f470438ed" args="(string strName)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addLowSpeedLogging</b> (string strName)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf020f22f2ced01699d4dc125e71f4f4"></a><!-- doxytag: member="CCrazyflie::setSendSetpoints" ref="aaf020f22f2ced01699d4dc125e71f4f4" args="(bool bSendSetpoints)" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setSendSetpoints</b> (bool bSendSetpoints)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56a9dc574f082df40278c03cfda715fc"></a><!-- doxytag: member="CCrazyflie::sendsSetpoints" ref="a56a9dc574f082df40278c03cfda715fc" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>sendsSetpoints</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d4fb41f5a9b9e81b88dfa2041f4b76f"></a><!-- doxytag: member="CCrazyflie::sensorDoubleValue" ref="a1d4fb41f5a9b9e81b88dfa2041f4b76f" args="(string strName)" -->
-double&#160;</td><td class="memItemRight" valign="bottom"><b>sensorDoubleValue</b> (string strName)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a011460a581cf28a5f4bc4abf9b9e06a7"></a><!-- doxytag: member="CCrazyflie::enableHighSpeedLogging" ref="a011460a581cf28a5f4bc4abf9b9e06a7" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableHighSpeedLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a176ea80e51e5a85fa3144a8ee36572a5"></a><!-- doxytag: member="CCrazyflie::disableLogging" ref="a176ea80e51e5a85fa3144a8ee36572a5" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disableLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a778634778e113918ab95e74062341d68"></a><!-- doxytag: member="CCrazyflie::enableStabilizerLogging" ref="a778634778e113918ab95e74062341d68" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableStabilizerLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45cf67191a1d2bf2ba010b01ad77a2a7"></a><!-- doxytag: member="CCrazyflie::enableGyroscopeLogging" ref="a45cf67191a1d2bf2ba010b01ad77a2a7" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableGyroscopeLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d14ceab7e49fe9496128d6deee0b5b7"></a><!-- doxytag: member="CCrazyflie::enableAccelerometerLogging" ref="a7d14ceab7e49fe9496128d6deee0b5b7" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableAccelerometerLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3119ec47087b6000444245f6c5c76b7f"></a><!-- doxytag: member="CCrazyflie::disableStabilizerLogging" ref="a3119ec47087b6000444245f6c5c76b7f" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disableStabilizerLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24f083f517a97c0a7da90f2a9ed4a349"></a><!-- doxytag: member="CCrazyflie::disableGyroscopeLogging" ref="a24f083f517a97c0a7da90f2a9ed4a349" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disableGyroscopeLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58abb10a48a23fe1ffa0d3be26b5f451"></a><!-- doxytag: member="CCrazyflie::disableAccelerometerLogging" ref="a58abb10a48a23fe1ffa0d3be26b5f451" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disableAccelerometerLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbf11e02f8cc37d306e36a6989f4eeaa"></a><!-- doxytag: member="CCrazyflie::enableBatteryLogging" ref="acbf11e02f8cc37d306e36a6989f4eeaa" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableBatteryLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada810f9f839e82737c9d53ee6e10e124"></a><!-- doxytag: member="CCrazyflie::disableBatteryLogging" ref="ada810f9f839e82737c9d53ee6e10e124" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disableBatteryLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9cc088474f81079743c7399a7305faa"></a><!-- doxytag: member="CCrazyflie::stopLogging" ref="af9cc088474f81079743c7399a7305faa" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>stopLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fbc54d5a6cba87da549859513b61a31"></a><!-- doxytag: member="CCrazyflie::batteryLevel" ref="a3fbc54d5a6cba87da549859513b61a31" args="()" -->
-double&#160;</td><td class="memItemRight" valign="bottom"><b>batteryLevel</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5971eea4991ae79c9bcc9354ea6208df"></a><!-- doxytag: member="CCrazyflie::enableMagnetometerLogging" ref="a5971eea4991ae79c9bcc9354ea6208df" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableMagnetometerLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae64229a4a32c34b3befdc5fa1937bb78"></a><!-- doxytag: member="CCrazyflie::disableMagnetometerLogging" ref="ae64229a4a32c34b3befdc5fa1937bb78" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disableMagnetometerLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af24ad0ae3664ab4486af1f063ed9f1fb"></a><!-- doxytag: member="CCrazyflie::enableAltimeterLogging" ref="af24ad0ae3664ab4486af1f063ed9f1fb" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>enableAltimeterLogging</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aca3104ba3c43801d11a8c71878b7c7"></a><!-- doxytag: member="CCrazyflie::disableAltimeterLogging" ref="a0aca3104ba3c43801d11a8c71878b7c7" args="()" -->
-void&#160;</td><td class="memItemRight" valign="bottom"><b>disableAltimeterLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a1f174585c4bcd8933f47917c1ec68e2c">isInitialized</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the copter was initialized successfully.  <a href="#a1f174585c4bcd8933f47917c1ec68e2c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#aaf020f22f2ced01699d4dc125e71f4f4">setSendSetpoints</a> (bool bSendSetpoints)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set whether setpoints are currently sent while <a class="el" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations.">cycle()</a>  <a href="#aaf020f22f2ced01699d4dc125e71f4f4"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a56a9dc574f082df40278c03cfda715fc">sendsSetpoints</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not setpoints are currently sent to the copter.  <a href="#a56a9dc574f082df40278c03cfda715fc"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a1d4fb41f5a9b9e81b88dfa2041f4b76f">sensorDoubleValue</a> (string strName)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Read back a sensor value you subscribed to.  <a href="#a1d4fb41f5a9b9e81b88dfa2041f4b76f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#a3fbc54d5a6cba87da549859513b61a31">batteryLevel</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the current battery level.  <a href="#a3fbc54d5a6cba87da549859513b61a31"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Crazyflie Nano convenience controller class. </p>
@@ -211,15 +144,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>disableAltimeterLoggi
   </dd>
 </dl>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_aba6b472c6b84d7ce5d692c28c8f49cf2_cgraph.png" border="0" usemap="#class_c_crazyflie_aba6b472c6b84d7ce5d692c28c8f49cf2_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_aba6b472c6b84d7ce5d692c28c8f49cf2_cgraph" id="class_c_crazyflie_aba6b472c6b84d7ce5d692c28c8f49cf2_cgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#ae6c6bfd5e202fd3a06118025cb673e0f" title="Switches off the current controller." alt="" coords="208,5,397,35"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a44611c18a106723fe52f1819ced15bc6"></a><!-- doxytag: member="CCrazyflie::~CCrazyflie" ref="a44611c18a106723fe52f1819ced15bc6" args="()" -->
@@ -242,12 +166,12 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a10ab497cc9a6dc926b44ebbc85d2d3f8"></a><!-- doxytag: member="CCrazyflie::arrivalThreshold" ref="a10ab497cc9a6dc926b44ebbc85d2d3f8" args="()" -->
+<a class="anchor" id="a3fbc54d5a6cba87da549859513b61a31"></a><!-- doxytag: member="CCrazyflie::batteryLevel" ref="a3fbc54d5a6cba87da549859513b61a31" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float CCrazyflie::arrivalThreshold </td>
+          <td class="memname">double CCrazyflie::batteryLevel </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -256,34 +180,15 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>The current arrival threshold value. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns the current internal value for arrival vicinity checking. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a49ca10991310aefaabf622a276d70e5e"></a><!-- doxytag: member="CCrazyflie::controllerIgnoresYaw" ref="a49ca10991310aefaabf622a276d70e5e" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CCrazyflie::controllerIgnoresYaw </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Signals whether or not the yaw control is ignored in controllers. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Boolean value denoting whether the yaw control is currently ignored during control. </dd></dl>
+<p>Report the current battery level. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Double value denoting the battery level as reported by the copter. </dd></dl>
 
 <p><div class="dynheader">
-Here is the caller graph for this function:</div>
+Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a49ca10991310aefaabf622a276d70e5e_icgraph.png" border="0" usemap="#class_c_crazyflie_a49ca10991310aefaabf622a276d70e5e_icgraph" alt=""/></div>
-<map name="class_c_crazyflie_a49ca10991310aefaabf622a276d70e5e_icgraph" id="class_c_crazyflie_a49ca10991310aefaabf622a276d70e5e_icgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#a28cdd3a2f72ea3ba3efe5b40fc729cd6" title="Selects the P gain based controller as active controller." alt="" coords="271,5,444,35"/></map>
+<div class="center"><img src="class_c_crazyflie_a3fbc54d5a6cba87da549859513b61a31_cgraph.png" border="0" usemap="#class_c_crazyflie_a3fbc54d5a6cba87da549859513b61a31_cgraph" alt=""/></div>
+<map name="class_c_crazyflie_a3fbc54d5a6cba87da549859513b61a31_cgraph" id="class_c_crazyflie_a3fbc54d5a6cba87da549859513b61a31_cgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#a1d4fb41f5a9b9e81b88dfa2041f4b76f" title="Read back a sensor value you subscribed to." alt="" coords="216,5,421,35"/></map>
 </div>
 </p>
 
@@ -332,18 +237,18 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph.png" border="0" usemap="#class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph" alt=""/></div>
 <map name="class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph" id="class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph">
-<area shape="rect" id="node3" href="class_c_crazy_radio.html#a503449d14ef7d2f3c63ed3a8f922bd9e" title="Whether or not the copter is answering sent packets." alt="" coords="177,5,361,35"/><area shape="rect" id="node5" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809" title="Whether or not the USB connection is still operational." alt="" coords="195,59,344,88"/></map>
+<area shape="rect" id="node3" href="class_c_crazy_radio.html#a503449d14ef7d2f3c63ed3a8f922bd9e" title="Whether or not the copter is answering sent packets." alt="" coords="196,85,380,115"/><area shape="rect" id="node5" href="class_c_crazy_radio.html#ac09505eee77c53baa79eab8c1b4faca1" title="Extracting all logging related packets." alt="" coords="177,139,399,168"/><area shape="rect" id="node7" href="class_c_crazy_radio.html#ae97930dadd4c09a9faa0b9df38b28ca1" title="Sends out an empty dummy packet." alt="" coords="176,192,400,221"/><area shape="rect" id="node28" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809" title="Whether or not the USB connection is still operational." alt="" coords="213,245,363,275"/><area shape="rect" id="node9" href="class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687" title="Sends the given packet&#39;s payload to the copter." alt="" coords="448,192,627,221"/><area shape="rect" id="node11" href="class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="693,5,856,35"/><area shape="rect" id="node13" href="class_c_c_r_t_p_packet.html#a7f69fd021d84553f6882f3c973fce93e" title="Gives out the pointer to the internally stored data." alt="" coords="704,59,845,88"/><area shape="rect" id="node15" href="class_c_c_r_t_p_packet.html#ae858fd5b801ead5123fde3fa65f4b993" title="Returns the length of the currently stored data (in bytes)" alt="" coords="684,112,865,141"/><area shape="rect" id="node17" href="class_c_c_r_t_p_packet.html#abbf2536a6c798f5cd6a2f4a54e312f47" title="Returns the currently set port number." alt="" coords="705,165,844,195"/><area shape="rect" id="node19" href="class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="676,219,873,248"/><area shape="rect" id="node21" href="class_c_c_r_t_p_packet.html#a6f016d8169e8513bc31ba0a7f4f0b6f4" title="Returns the length of a sendable data block." alt="" coords="923,245,1160,275"/><area shape="rect" id="node24" href="class_c_c_r_t_p_packet.html#aec6700a52ab8a83cb38447c98402b9e3" title="Set the copter channel to send the payload data to." alt="" coords="683,323,867,352"/><area shape="rect" id="node26" href="class_c_c_r_t_p_packet.html#a5be4f08603d3fc9f144afcbbce0e796c" title="Set the copter port to send the payload data to." alt="" coords="695,376,855,405"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="ae6c6bfd5e202fd3a06118025cb673e0f"></a><!-- doxytag: member="CCrazyflie::disableController" ref="ae6c6bfd5e202fd3a06118025cb673e0f" args="()" -->
+<a class="anchor" id="a1f174585c4bcd8933f47917c1ec68e2c"></a><!-- doxytag: member="CCrazyflie::isInitialized" ref="a1f174585c4bcd8933f47917c1ec68e2c" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CCrazyflie::disableController </td>
+          <td class="memname">bool CCrazyflie::isInitialized </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -352,268 +257,8 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Switches off the current controller. </p>
-<p>Resets copter control to 'CTRL_NONE' as specified in the Controller enum and effectively switches off control. </p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_ae6c6bfd5e202fd3a06118025cb673e0f_icgraph.png" border="0" usemap="#class_c_crazyflie_ae6c6bfd5e202fd3a06118025cb673e0f_icgraph" alt=""/></div>
-<map name="class_c_crazyflie_ae6c6bfd5e202fd3a06118025cb673e0f_icgraph" id="class_c_crazyflie_ae6c6bfd5e202fd3a06118025cb673e0f_icgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#aba6b472c6b84d7ce5d692c28c8f49cf2" title="Constructor for the copter convenience class." alt="" coords="253,5,408,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#a28cdd3a2f72ea3ba3efe5b40fc729cd6" title="Selects the P gain based controller as active controller." alt="" coords="244,59,417,88"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a747f2375b58b112cb79af982ac4973dc"></a><!-- doxytag: member="CCrazyflie::distanceBetweenPositions" ref="a747f2375b58b112cb79af982ac4973dc" args="(struct DSVector dsvPosition1, struct DSVector dsvPosition2)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double CCrazyflie::distanceBetweenPositions </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="struct_d_s_vector.html">DSVector</a>&#160;</td>
-          <td class="paramname"><em>dsvPosition1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="struct_d_s_vector.html">DSVector</a>&#160;</td>
-          <td class="paramname"><em>dsvPosition2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Returns the distance between two physical positions. </p>
-<p>Calculates the euclidean distance between the two R^3 positions given as dsvPosition1 and dsvPosition2.</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns a value denoting the distance between the two given positions, in meters. </dd></dl>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a747f2375b58b112cb79af982ac4973dc_icgraph.png" border="0" usemap="#class_c_crazyflie_a747f2375b58b112cb79af982ac4973dc_icgraph" alt=""/></div>
-<map name="class_c_crazyflie_a747f2375b58b112cb79af982ac4973dc_icgraph" id="class_c_crazyflie_a747f2375b58b112cb79af982ac4973dc_icgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#af8ed1c504299ecda3e835a4009afe3c6" title="Returns the distance between the current and the given physical position." alt="" coords="301,5,504,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#ac8db590372842ff6a7f7391fc76bc551" title="Returns the distance between the current and the desired physical position." alt="" coords="552,5,800,35"/><area shape="rect" id="node7" href="class_c_crazyflie.html#a5b6f152b95137346a2da4c28ba9d8a40" title="Whether or not the copter has reached it&#39;s desired position, given a custom threshold value..." alt="" coords="849,5,1055,35"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ac8db590372842ff6a7f7391fc76bc551"></a><!-- doxytag: member="CCrazyflie::distanceToDesiredPosition" ref="ac8db590372842ff6a7f7391fc76bc551" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double CCrazyflie::distanceToDesiredPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Returns the distance between the current and the desired physical position. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns a value denoting the distance between the current and desired position, in meters. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_cgraph.png" border="0" usemap="#class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_cgraph" id="class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_cgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#af8ed1c504299ecda3e835a4009afe3c6" title="Returns the distance between the current and the given physical position." alt="" coords="301,5,504,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#a747f2375b58b112cb79af982ac4973dc" title="Returns the distance between two physical positions." alt="" coords="553,5,799,35"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_icgraph.png" border="0" usemap="#class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_icgraph" alt=""/></div>
-<map name="class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_icgraph" id="class_c_crazyflie_ac8db590372842ff6a7f7391fc76bc551_icgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#a5b6f152b95137346a2da4c28ba9d8a40" title="Whether or not the copter has reached it&#39;s desired position, given a custom threshold value..." alt="" coords="303,5,508,35"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="af8ed1c504299ecda3e835a4009afe3c6"></a><!-- doxytag: member="CCrazyflie::distanceToPosition" ref="af8ed1c504299ecda3e835a4009afe3c6" args="(struct DSVector dsvPosition)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double CCrazyflie::distanceToPosition </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="struct_d_s_vector.html">DSVector</a>&#160;</td>
-          <td class="paramname"><em>dsvPosition</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Returns the distance between the current and the given physical position. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Returns a value denoting the distance between the current and given position dsvPosition, in meters. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_cgraph.png" border="0" usemap="#class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_cgraph" id="class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_cgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#a747f2375b58b112cb79af982ac4973dc" title="Returns the distance between two physical positions." alt="" coords="257,5,503,35"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_icgraph.png" border="0" usemap="#class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_icgraph" alt=""/></div>
-<map name="class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_icgraph" id="class_c_crazyflie_af8ed1c504299ecda3e835a4009afe3c6_icgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#ac8db590372842ff6a7f7391fc76bc551" title="Returns the distance between the current and the desired physical position." alt="" coords="256,5,504,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#a5b6f152b95137346a2da4c28ba9d8a40" title="Whether or not the copter has reached it&#39;s desired position, given a custom threshold value..." alt="" coords="553,5,759,35"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a1bd50cee01da8e895cf6078e61c30a63"></a><!-- doxytag: member="CCrazyflie::goToAbsolutePosition" ref="a1bd50cee01da8e895cf6078e61c30a63" args="(struct DSVector dsvAbsolute)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CCrazyflie::goToAbsolutePosition </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="struct_d_s_vector.html">DSVector</a>&#160;</td>
-          <td class="paramname"><em>dsvAbsolute</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sets the desired absolute copter position. </p>
-<p>Sets the correct controller set point to go to the absolute R^3 position given in dsvAbsolute. The localization is purely based on the starting pose the copter was in when it was initialized. That place is denoted as origin (0, 0, 0) in R^3.</p>
-<p>Because of the nature of drifting integration errors when summing up velocity sensor readings and the connected uncertainty, this positioning method is bound to be imperfect. It can be used as an approximation if one does not need perfect localization though.</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dsvAbsolute</td><td>The absolute R^3 position to go to (given in meters) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_cgraph.png" border="0" usemap="#class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_cgraph" id="class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_cgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#a014e4a15e7a46e111d1887149b4f9f43" title="Set the desired set point, i.e. position and yaw." alt="" coords="272,5,477,35"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_icgraph.png" border="0" usemap="#class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_icgraph" alt=""/></div>
-<map name="class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_icgraph" id="class_c_crazyflie_a1bd50cee01da8e895cf6078e61c30a63_icgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#ae9d35a3a91b49f8c253985a529405c75" title="Sets the desired relative copter position." alt="" coords="272,5,488,35"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="ae9d35a3a91b49f8c253985a529405c75"></a><!-- doxytag: member="CCrazyflie::goToRelativePosition" ref="ae9d35a3a91b49f8c253985a529405c75" args="(struct DSVector dsvRelative)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CCrazyflie::goToRelativePosition </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="struct_d_s_vector.html">DSVector</a>&#160;</td>
-          <td class="paramname"><em>dsvRelative</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sets the desired relative copter position. </p>
-<p>Sets the correct controller set point to go to the relative R^3 position given in dsvRelative, starting from an arbitrary current position.</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dsvRelative</td><td>The relative R^3 position to go to (given in meters) </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_ae9d35a3a91b49f8c253985a529405c75_cgraph.png" border="0" usemap="#class_c_crazyflie_ae9d35a3a91b49f8c253985a529405c75_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_ae9d35a3a91b49f8c253985a529405c75_cgraph" id="class_c_crazyflie_ae9d35a3a91b49f8c253985a529405c75_cgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#a1bd50cee01da8e895cf6078e61c30a63" title="Sets the desired absolute copter position." alt="" coords="269,5,488,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#a014e4a15e7a46e111d1887149b4f9f43" title="Set the desired set point, i.e. position and yaw." alt="" coords="536,5,741,35"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a02f17beaddb51be4f0806484a93cf1fa"></a><!-- doxytag: member="CCrazyflie::isAtDesiredPosition" ref="a02f17beaddb51be4f0806484a93cf1fa" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CCrazyflie::isAtDesiredPosition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Whether or not the copter has reached it's desired position. </p>
-<p>Taking an threshold value into account (which by default is set to 0.05m), this function returns a boolean value showing whether the copter is in vicinity of the desired position set earlier. This value serves an informational purpose for client programs to see whether their control goal was reached yet.</p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Boolean value denoting whether the control goal position was reached. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a5b6f152b95137346a2da4c28ba9d8a40"></a><!-- doxytag: member="CCrazyflie::isAtDesiredPosition" ref="a5b6f152b95137346a2da4c28ba9d8a40" args="(float fThreshold)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool CCrazyflie::isAtDesiredPosition </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>fThreshold</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Whether or not the copter has reached it's desired position, given a custom threshold value. </p>
-<p>Basically the same as <a class="el" href="class_c_crazyflie.html#a02f17beaddb51be4f0806484a93cf1fa" title="Whether or not the copter has reached it&#39;s desired position.">isAtDesiredPosition()</a> but gives the possibility of overriding the internal default threshold with a custom value.</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fThreshold</td><td>Custom threshold value used for vicinity checking of the copter's control goal position.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Boolean value denoting whether the control goal position was reached. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a5b6f152b95137346a2da4c28ba9d8a40_cgraph.png" border="0" usemap="#class_c_crazyflie_a5b6f152b95137346a2da4c28ba9d8a40_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_a5b6f152b95137346a2da4c28ba9d8a40_cgraph" id="class_c_crazyflie_a5b6f152b95137346a2da4c28ba9d8a40_cgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#ac8db590372842ff6a7f7391fc76bc551" title="Returns the distance between the current and the desired physical position." alt="" coords="261,5,509,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#af8ed1c504299ecda3e835a4009afe3c6" title="Returns the distance between the current and the given physical position." alt="" coords="557,5,760,35"/><area shape="rect" id="node7" href="class_c_crazyflie.html#a747f2375b58b112cb79af982ac4973dc" title="Returns the distance between two physical positions." alt="" coords="809,5,1055,35"/></map>
-</div>
-</p>
+<p>Whether or not the copter was initialized successfully. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Boolean value denoting the initialization status of the copter communication. </dd></dl>
 
 </div>
 </div>
@@ -631,27 +276,18 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Returns the current pitch control set point. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The current pitch control set point as given to the current controller </dd></dl>
+<p>Returns the current pitch. </p>
+<p>Pitch values are in degree, ranging from -180.0deg to 180.0deg.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The current pitch value as reported by the copter </dd></dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazyflie_a42059530824eeb68364cd977bfb84dbd_cgraph.png" border="0" usemap="#class_c_crazyflie_a42059530824eeb68364cd977bfb84dbd_cgraph" alt=""/></div>
+<map name="class_c_crazyflie_a42059530824eeb68364cd977bfb84dbd_cgraph" id="class_c_crazyflie_a42059530824eeb68364cd977bfb84dbd_cgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#a1d4fb41f5a9b9e81b88dfa2041f4b76f" title="Read back a sensor value you subscribed to." alt="" coords="173,5,379,35"/></map>
 </div>
-</div>
-<a class="anchor" id="abd473cda70c8d18da37d69252dc2a188"></a><!-- doxytag: member="CCrazyflie::relocalize" ref="abd473cda70c8d18da37d69252dc2a188" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CCrazyflie::relocalize </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Reset the current pose to the origin pose. </p>
-<p>Calls the private resetState function to re-localize the copter and use the current pose as the origin pose. Adding an extra function call here mainly serves splitting up functionalities between initialization and maintenance functions. </p>
+</p>
 
 </div>
 </div>
@@ -669,135 +305,66 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Returns the current roll control set point. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The current roll control set point as given to the current controller </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a8155bd5f1595d3d96a7df418e71fa2b3"></a><!-- doxytag: member="CCrazyflie::setArrivalThreshold" ref="a8155bd5f1595d3d96a7df418e71fa2b3" args="(float fArrivalThreshold)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CCrazyflie::setArrivalThreshold </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>fArrivalThreshold</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sets the internal threshold value for arrival checking. </p>
-<p>Sets the internal value of the threshold distance the copter must be within when checking whether it reached it's destination. This does not affect the control algorithm as they will continuously try to go as near as possible. Therefore, this value is purely used for user-side checking of destination vicinity.</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fArrivalThreshold</td><td>The threshold value to set (in meters). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a24e35e842b9bb4d0d05f180de6ab6755"></a><!-- doxytag: member="CCrazyflie::setControllerIgnoresYaw" ref="a24e35e842b9bb4d0d05f180de6ab6755" args="(bool bControllerIgnoresYaw)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CCrazyflie::setControllerIgnoresYaw </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bControllerIgnoresYaw</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Globally sets whether controllers ignore yaw control. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">bControllerIgnoresYaw</td><td>Boolean value that defines whether controllers ignore yaw control </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Returns the current roll. </p>
+<p>Roll values are in degree, ranging from -180.0deg to 180.0deg.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The current roll value as reported by the copter </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a24e35e842b9bb4d0d05f180de6ab6755_cgraph.png" border="0" usemap="#class_c_crazyflie_a24e35e842b9bb4d0d05f180de6ab6755_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_a24e35e842b9bb4d0d05f180de6ab6755_cgraph" id="class_c_crazyflie_a24e35e842b9bb4d0d05f180de6ab6755_cgraph">
-<area shape="rect" id="node3" href="class_c_controller.html#ad881b8a383079038c3a1f8c7198123ba" title="Sets whether the yaw control is ignored or not." alt="" coords="289,5,471,35"/></map>
+<div class="center"><img src="class_c_crazyflie_a57ba541cb966937036eeb7ef2109dfe0_cgraph.png" border="0" usemap="#class_c_crazyflie_a57ba541cb966937036eeb7ef2109dfe0_cgraph" alt=""/></div>
+<map name="class_c_crazyflie_a57ba541cb966937036eeb7ef2109dfe0_cgraph" id="class_c_crazyflie_a57ba541cb966937036eeb7ef2109dfe0_cgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#a1d4fb41f5a9b9e81b88dfa2041f4b76f" title="Read back a sensor value you subscribed to." alt="" coords="163,5,368,35"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a014e4a15e7a46e111d1887149b4f9f43"></a><!-- doxytag: member="CCrazyflie::setDesiredSetPoint" ref="a014e4a15e7a46e111d1887149b4f9f43" args="(struct DSControlSetPoint cspDesired)" -->
+<a class="anchor" id="a56a9dc574f082df40278c03cfda715fc"></a><!-- doxytag: member="CCrazyflie::sendsSetpoints" ref="a56a9dc574f082df40278c03cfda715fc" args="()" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void CCrazyflie::setDesiredSetPoint </td>
+          <td class="memname">bool CCrazyflie::sendsSetpoints </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="struct_d_s_control_set_point.html">DSControlSetPoint</a>&#160;</td>
-          <td class="paramname"><em>cspDesired</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div>
 <div class="memdoc">
 
-<p>Set the desired set point, i.e. position and yaw. </p>
-<p>Sets the desired controller set point for the currently selected controller. The set point will be set even if no controller is selected and tried to be achieved as soon as a controller is active.</p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cspDesired</td><td>The desired set point. Consists of an R^3 position and a yaw value. </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Whether or not setpoints are currently sent to the copter. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Boolean value denoting whether or not the current setpoint is sent to the copter while performing <a class="el" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations.">cycle()</a>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d4fb41f5a9b9e81b88dfa2041f4b76f"></a><!-- doxytag: member="CCrazyflie::sensorDoubleValue" ref="a1d4fb41f5a9b9e81b88dfa2041f4b76f" args="(string strName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double CCrazyflie::sensorDoubleValue </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>strName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Read back a sensor value you subscribed to. </p>
+<p>Possible sensor values might be: stabilizer.yaw stabilizer.roll stabilizer.pitch pm.vbat</p>
+<p>The possible key names strongly depend on your firmware. If you don't know what to do with this, just use the convience functions like <a class="el" href="class_c_crazyflie.html#a57ba541cb966937036eeb7ef2109dfe0" title="Returns the current roll.">roll()</a>, <a class="el" href="class_c_crazyflie.html#a42059530824eeb68364cd977bfb84dbd" title="Returns the current pitch.">pitch()</a>, <a class="el" href="class_c_crazyflie.html#a843d4bc976670b7a416654ff2ca08271" title="Returns the current yaw.">yaw()</a>, and <a class="el" href="class_c_crazyflie.html#a3fbc54d5a6cba87da549859513b61a31" title="Report the current battery level.">batteryLevel()</a>.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Double value denoting the current value of the requested log variable. </dd></dl>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a014e4a15e7a46e111d1887149b4f9f43_icgraph.png" border="0" usemap="#class_c_crazyflie_a014e4a15e7a46e111d1887149b4f9f43_icgraph" alt=""/></div>
-<map name="class_c_crazyflie_a014e4a15e7a46e111d1887149b4f9f43_icgraph" id="class_c_crazyflie_a014e4a15e7a46e111d1887149b4f9f43_icgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#a1bd50cee01da8e895cf6078e61c30a63" title="Sets the desired absolute copter position." alt="" coords="259,5,477,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#ae9d35a3a91b49f8c253985a529405c75" title="Sets the desired relative copter position." alt="" coords="525,5,741,35"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a28cdd3a2f72ea3ba3efe5b40fc729cd6"></a><!-- doxytag: member="CCrazyflie::setPController" ref="a28cdd3a2f72ea3ba3efe5b40fc729cd6" args="(float fPGain)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void CCrazyflie::setPController </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>fPGain</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Selects the P gain based controller as active controller. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fPGain</td><td>Denotes the proportional P gain constant to use for the controller </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a28cdd3a2f72ea3ba3efe5b40fc729cd6_cgraph.png" border="0" usemap="#class_c_crazyflie_a28cdd3a2f72ea3ba3efe5b40fc729cd6_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_a28cdd3a2f72ea3ba3efe5b40fc729cd6_cgraph" id="class_c_crazyflie_a28cdd3a2f72ea3ba3efe5b40fc729cd6_cgraph">
-<area shape="rect" id="node3" href="class_c_crazyflie.html#a49ca10991310aefaabf622a276d70e5e" title="Signals whether or not the yaw control is ignored in controllers." alt="" coords="231,5,444,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#ae6c6bfd5e202fd3a06118025cb673e0f" title="Switches off the current controller." alt="" coords="243,59,432,88"/><area shape="rect" id="node7" href="class_c_controller.html#ad881b8a383079038c3a1f8c7198123ba" title="Sets whether the yaw control is ignored or not." alt="" coords="247,112,428,141"/></map>
+<div class="center"><img src="class_c_crazyflie_a1d4fb41f5a9b9e81b88dfa2041f4b76f_icgraph.png" border="0" usemap="#class_c_crazyflie_a1d4fb41f5a9b9e81b88dfa2041f4b76f_icgraph" alt=""/></div>
+<map name="class_c_crazyflie_a1d4fb41f5a9b9e81b88dfa2041f4b76f_icgraph" id="class_c_crazyflie_a1d4fb41f5a9b9e81b88dfa2041f4b76f_icgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#a3fbc54d5a6cba87da549859513b61a31" title="Report the current battery level." alt="" coords="259,5,421,35"/><area shape="rect" id="node5" href="class_c_crazyflie.html#a42059530824eeb68364cd977bfb84dbd" title="Returns the current pitch." alt="" coords="280,59,400,88"/><area shape="rect" id="node7" href="class_c_crazyflie.html#a57ba541cb966937036eeb7ef2109dfe0" title="Returns the current roll." alt="" coords="285,112,395,141"/><area shape="rect" id="node9" href="class_c_crazyflie.html#a5db5a4b65c5d3fc1092e0ab27d4165f7" title="Returns the current thrust." alt="" coords="277,165,403,195"/><area shape="rect" id="node11" href="class_c_crazyflie.html#a843d4bc976670b7a416654ff2ca08271" title="Returns the current yaw." alt="" coords="283,219,397,248"/></map>
 </div>
 </p>
 
@@ -849,6 +416,33 @@ Here is the call graph for this function:</div>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table class="params">
     <tr><td class="paramname">fRoll</td><td>The roll value to send </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaf020f22f2ced01699d4dc125e71f4f4"></a><!-- doxytag: member="CCrazyflie::setSendSetpoints" ref="aaf020f22f2ced01699d4dc125e71f4f4" args="(bool bSendSetpoints)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CCrazyflie::setSendSetpoints </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bSendSetpoints</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set whether setpoints are currently sent while <a class="el" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations.">cycle()</a> </p>
+<p>While performing the <a class="el" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations.">cycle()</a> function, the currently set setpoint is sent to the copter regularly. If this is not the case, dummy packets are sent. Using this mechanism, you can effectively switch off sending new commands to the copter.</p>
+<p>Default value: `false`</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bSendSetpoints</td><td>When set to `true`, the current setpoint is sent while <a class="el" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations.">cycle()</a>. Otherwise, not. </td></tr>
   </table>
   </dd>
 </dl>
@@ -921,8 +515,17 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Returns the current thrust control set point. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The current thrust control set point as given to the current controller </dd></dl>
+<p>Returns the current thrust. </p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The current thrust value as reported by the copter </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazyflie_a5db5a4b65c5d3fc1092e0ab27d4165f7_cgraph.png" border="0" usemap="#class_c_crazyflie_a5db5a4b65c5d3fc1092e0ab27d4165f7_cgraph" alt=""/></div>
+<map name="class_c_crazyflie_a5db5a4b65c5d3fc1092e0ab27d4165f7_cgraph" id="class_c_crazyflie_a5db5a4b65c5d3fc1092e0ab27d4165f7_cgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#a1d4fb41f5a9b9e81b88dfa2041f4b76f" title="Read back a sensor value you subscribed to." alt="" coords="179,5,384,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -940,8 +543,18 @@ Here is the call graph for this function:</div>
 </div>
 <div class="memdoc">
 
-<p>Returns the current yaw control set point. </p>
-<dl class="return"><dt><b>Returns:</b></dt><dd>The current yaw control set point as given to the current controller </dd></dl>
+<p>Returns the current yaw. </p>
+<p>Yaw values are in degree, ranging from -180.0deg to 180.0deg.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>The current yaw value as reported by the copter </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazyflie_a843d4bc976670b7a416654ff2ca08271_cgraph.png" border="0" usemap="#class_c_crazyflie_a843d4bc976670b7a416654ff2ca08271_cgraph" alt=""/></div>
+<map name="class_c_crazyflie_a843d4bc976670b7a416654ff2ca08271_cgraph" id="class_c_crazyflie_a843d4bc976670b7a416654ff2ca08271_cgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#a1d4fb41f5a9b9e81b88dfa2041f4b76f" title="Read back a sensor value you subscribed to." alt="" coords="171,5,376,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -964,7 +577,7 @@ Here is the call graph for this function:</div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 07:16:28 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 08:32:08 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

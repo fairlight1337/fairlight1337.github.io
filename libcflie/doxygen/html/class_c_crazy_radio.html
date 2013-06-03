@@ -53,7 +53,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -88,20 +87,20 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the power level to be used for communication purposes.  <a href="#a51a89fcafff3e246209b4aecb00c2730"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687">sendPacket</a> (<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *crtpSend, bool bDeleteAfterwards=false)</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the given packet's payload to the copter.  <a href="#ab8c905867ddd38464e308a65af4e2687"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a322d2bf33189085f324b1403e427bebb"></a><!-- doxytag: member="CCrazyRadio::sendAndReceive" ref="a322d2bf33189085f324b1403e427bebb" args="(CCRTPPacket *crtpSend, bool bDeleteAfterwards=false)" -->
-<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sendAndReceive</b> (<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *crtpSend, bool bDeleteAfterwards=false)</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7857432d0ec2765f1d315f9dddc39aa1"></a><!-- doxytag: member="CCrazyRadio::sendAndReceive" ref="a7857432d0ec2765f1d315f9dddc39aa1" args="(CCRTPPacket *crtpSend, int nPort, int nChannel, bool bDeleteAfterwards=true, int nRetries=10, int nMicrosecondsWait=100)" -->
-<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>sendAndReceive</b> (<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *crtpSend, int nPort, int nChannel, bool bDeleteAfterwards=true, int nRetries=10, int nMicrosecondsWait=100)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#a322d2bf33189085f324b1403e427bebb">sendAndReceive</a> (<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *crtpSend, bool bDeleteAfterwards=false)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the given packet and waits for a reply.  <a href="#a322d2bf33189085f324b1403e427bebb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#a7857432d0ec2765f1d315f9dddc39aa1">sendAndReceive</a> (<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *crtpSend, int nPort, int nChannel, bool bDeleteAfterwards=true, int nRetries=10, int nMicrosecondsWait=100)</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends the given packet and waits for a reply.  <a href="#a7857432d0ec2765f1d315f9dddc39aa1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#ae97930dadd4c09a9faa0b9df38b28ca1">sendDummyPacket</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends out an empty dummy packet.  <a href="#ae97930dadd4c09a9faa0b9df38b28ca1"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#afc970245d4013dab9767a99cdfac3040">waitForPacket</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for the next non-empty packet.  <a href="#afc970245d4013dab9767a99cdfac3040"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#a503449d14ef7d2f3c63ed3a8f922bd9e">ackReceived</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the copter is answering sent packets.  <a href="#a503449d14ef7d2f3c63ed3a8f922bd9e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809">usbOK</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the USB connection is still operational.  <a href="#a67274ed88cec66eebc5f74ec6f24a809"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc970245d4013dab9767a99cdfac3040"></a><!-- doxytag: member="CCrazyRadio::waitForPacket" ref="afc970245d4013dab9767a99cdfac3040" args="()" -->
-<a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>waitForPacket</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac09505eee77c53baa79eab8c1b4faca1"></a><!-- doxytag: member="CCrazyRadio::popLoggingPackets" ref="ac09505eee77c53baa79eab8c1b4faca1" args="()" -->
-list&lt; <a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>popLoggingPackets</b> ()</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae97930dadd4c09a9faa0b9df38b28ca1"></a><!-- doxytag: member="CCrazyRadio::sendDummyPacket" ref="ae97930dadd4c09a9faa0b9df38b28ca1" args="()" -->
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>sendDummyPacket</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">list&lt; <a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazy_radio.html#ac09505eee77c53baa79eab8c1b4faca1">popLoggingPackets</a> ()</td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracting all logging related packets.  <a href="#ac09505eee77c53baa79eab8c1b4faca1"></a><br/></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Communication class to connect to and communicate via the CrazyRadio USB dongle. </p>
@@ -162,6 +161,35 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="ac09505eee77c53baa79eab8c1b4faca1"></a><!-- doxytag: member="CCrazyRadio::popLoggingPackets" ref="ac09505eee77c53baa79eab8c1b4faca1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">list&lt; <a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> * &gt; CCrazyRadio::popLoggingPackets </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Extracting all logging related packets. </p>
+<p>Returns a list of all collected logging related (i.e. originating from port 5) packets. This is called by the <a class="el" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> class automatically when performing cycle().</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>List of <a class="el" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> instances collected from port 5 (logging). </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_ac09505eee77c53baa79eab8c1b4faca1_icgraph.png" border="0" usemap="#class_c_crazy_radio_ac09505eee77c53baa79eab8c1b4faca1_icgraph" alt=""/></div>
+<map name="class_c_crazy_radio_ac09505eee77c53baa79eab8c1b4faca1_icgraph" id="class_c_crazy_radio_ac09505eee77c53baa79eab8c1b4faca1_icgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations." alt="" coords="277,5,400,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="ad1e3c51f6e3f2cdd146fde6760a4fa87"></a><!-- doxytag: member="CCrazyRadio::power" ref="ad1e3c51f6e3f2cdd146fde6760a4fa87" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -178,6 +206,166 @@ Here is the caller graph for this function:</div>
 
 <p>Returns the current setting for power usage by the USB dongle. </p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Value denoting the current power settings reserved for communication </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a322d2bf33189085f324b1403e427bebb"></a><!-- doxytag: member="CCrazyRadio::sendAndReceive" ref="a322d2bf33189085f324b1403e427bebb" args="(CCRTPPacket *crtpSend, bool bDeleteAfterwards=false)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> * CCrazyRadio::sendAndReceive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td>
+          <td class="paramname"><em>crtpSend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDeleteAfterwards</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends the given packet and waits for a reply. </p>
+<p>Internally, this function calls the more elaborate <a class="el" href="class_c_crazy_radio.html#a322d2bf33189085f324b1403e427bebb" title="Sends the given packet and waits for a reply.">sendAndReceive()</a> function supplying parameters for retrying and waiting. Convenience function signature.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crtpSend</td><td>Packet to send </td></tr>
+    <tr><td class="paramname">bDeleteAfterwards</td><td>Whether or not the packet to send is deleted internally after sending it</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Packet containing the reply or NULL if no reply was received (after retrying). </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_a322d2bf33189085f324b1403e427bebb_cgraph.png" border="0" usemap="#class_c_crazy_radio_a322d2bf33189085f324b1403e427bebb_cgraph" alt=""/></div>
+<map name="class_c_crazy_radio_a322d2bf33189085f324b1403e427bebb_cgraph" id="class_c_crazy_radio_a322d2bf33189085f324b1403e427bebb_cgraph">
+<area shape="rect" id="node3" href="class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="261,5,424,35"/><area shape="rect" id="node5" href="class_c_c_r_t_p_packet.html#abbf2536a6c798f5cd6a2f4a54e312f47" title="Returns the currently set port number." alt="" coords="273,59,412,88"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7857432d0ec2765f1d315f9dddc39aa1"></a><!-- doxytag: member="CCrazyRadio::sendAndReceive" ref="a7857432d0ec2765f1d315f9dddc39aa1" args="(CCRTPPacket *crtpSend, int nPort, int nChannel, bool bDeleteAfterwards=true, int nRetries=10, int nMicrosecondsWait=100)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> * CCrazyRadio::sendAndReceive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> *&#160;</td>
+          <td class="paramname"><em>crtpSend</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nPort</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nChannel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bDeleteAfterwards</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nRetries</em> = <code>10</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nMicrosecondsWait</em> = <code>100</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends the given packet and waits for a reply. </p>
+<p>Sends out the <a class="el" href="class_c_c_r_t_p_packet.html" title="Class to hold and process communication-related data for the CRTProtocol.">CCRTPPacket</a> instance denoted by crtpSend on the given port and channel. Retries a number of times and waits between each retry whether or not an answer was received (in this case, dummy packets are sent in order to receive replies).</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">crtpSend</td><td>Packet to send</td></tr>
+    <tr><td class="paramname">nPort</td><td>Port number on which to send this packet (and where to wait for the reply) </td></tr>
+    <tr><td class="paramname">nChannel</td><td>Channel number on which to send this packet (and where to wait for the reply) </td></tr>
+    <tr><td class="paramname">bDeletAfterwards</td><td>Whether or not the packet to send is deleted internally after sending it </td></tr>
+    <tr><td class="paramname">nRetries</td><td>Number of retries (re-sending) before giving up on an answer </td></tr>
+    <tr><td class="paramname">nMicrosecondsWait</td><td>Microseconds to wait between two re-sends</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Packet containing the reply or NULL if no reply was received (after retrying). </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_a7857432d0ec2765f1d315f9dddc39aa1_cgraph.png" border="0" usemap="#class_c_crazy_radio_a7857432d0ec2765f1d315f9dddc39aa1_cgraph" alt=""/></div>
+<map name="class_c_crazy_radio_a7857432d0ec2765f1d315f9dddc39aa1_cgraph" id="class_c_crazy_radio_a7857432d0ec2765f1d315f9dddc39aa1_cgraph">
+<area shape="rect" id="node3" href="class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="749,5,912,35"/><area shape="rect" id="node5" href="class_c_c_r_t_p_packet.html#abbf2536a6c798f5cd6a2f4a54e312f47" title="Returns the currently set port number." alt="" coords="761,59,900,88"/><area shape="rect" id="node7" href="class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687" title="Sends the given packet&#39;s payload to the copter." alt="" coords="504,165,683,195"/><area shape="rect" id="node24" href="class_c_crazy_radio.html#afc970245d4013dab9767a99cdfac3040" title="Waits for the next non&#45;empty packet." alt="" coords="263,164,455,193"/><area shape="rect" id="node10" href="class_c_c_r_t_p_packet.html#a7f69fd021d84553f6882f3c973fce93e" title="Gives out the pointer to the internally stored data." alt="" coords="760,112,901,141"/><area shape="rect" id="node12" href="class_c_c_r_t_p_packet.html#ae858fd5b801ead5123fde3fa65f4b993" title="Returns the length of the currently stored data (in bytes)" alt="" coords="740,165,921,195"/><area shape="rect" id="node15" href="class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="732,269,929,299"/><area shape="rect" id="node17" href="class_c_c_r_t_p_packet.html#a6f016d8169e8513bc31ba0a7f4f0b6f4" title="Returns the length of a sendable data block." alt="" coords="979,244,1216,273"/><area shape="rect" id="node20" href="class_c_c_r_t_p_packet.html#aec6700a52ab8a83cb38447c98402b9e3" title="Set the copter channel to send the payload data to." alt="" coords="739,323,923,352"/><area shape="rect" id="node22" href="class_c_c_r_t_p_packet.html#a5be4f08603d3fc9f144afcbbce0e796c" title="Set the copter port to send the payload data to." alt="" coords="751,376,911,405"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae97930dadd4c09a9faa0b9df38b28ca1"></a><!-- doxytag: member="CCrazyRadio::sendDummyPacket" ref="ae97930dadd4c09a9faa0b9df38b28ca1" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool CCrazyRadio::sendDummyPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Sends out an empty dummy packet. </p>
+<p>Only contains the payload `0xff`, as used for empty packet requests. Mostly used for waiting or keepalive.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Boolean value denoting whether sending the dummy packet worked or not. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_cgraph.png" border="0" usemap="#class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_cgraph" alt=""/></div>
+<map name="class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_cgraph" id="class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_cgraph">
+<area shape="rect" id="node3" href="class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687" title="Sends the given packet&#39;s payload to the copter." alt="" coords="277,192,456,221"/><area shape="rect" id="node5" href="class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="523,5,685,35"/><area shape="rect" id="node7" href="class_c_c_r_t_p_packet.html#a7f69fd021d84553f6882f3c973fce93e" title="Gives out the pointer to the internally stored data." alt="" coords="533,59,675,88"/><area shape="rect" id="node9" href="class_c_c_r_t_p_packet.html#ae858fd5b801ead5123fde3fa65f4b993" title="Returns the length of the currently stored data (in bytes)" alt="" coords="513,112,695,141"/><area shape="rect" id="node11" href="class_c_c_r_t_p_packet.html#abbf2536a6c798f5cd6a2f4a54e312f47" title="Returns the currently set port number." alt="" coords="535,165,673,195"/><area shape="rect" id="node13" href="class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="505,219,703,248"/><area shape="rect" id="node15" href="class_c_c_r_t_p_packet.html#a6f016d8169e8513bc31ba0a7f4f0b6f4" title="Returns the length of a sendable data block." alt="" coords="752,245,989,275"/><area shape="rect" id="node18" href="class_c_c_r_t_p_packet.html#aec6700a52ab8a83cb38447c98402b9e3" title="Set the copter channel to send the payload data to." alt="" coords="512,323,696,352"/><area shape="rect" id="node20" href="class_c_c_r_t_p_packet.html#a5be4f08603d3fc9f144afcbbce0e796c" title="Set the copter port to send the payload data to." alt="" coords="524,376,684,405"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_icgraph.png" border="0" usemap="#class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_icgraph" alt=""/></div>
+<map name="class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_icgraph" id="class_c_crazy_radio_ae97930dadd4c09a9faa0b9df38b28ca1_icgraph">
+<area shape="rect" id="node3" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations." alt="" coords="277,5,400,35"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -220,6 +408,15 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_cgraph.png" border="0" usemap="#class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_cgraph" alt=""/></div>
 <map name="class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_cgraph" id="class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_cgraph">
 <area shape="rect" id="node3" href="class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="251,5,413,35"/><area shape="rect" id="node5" href="class_c_c_r_t_p_packet.html#a7f69fd021d84553f6882f3c973fce93e" title="Gives out the pointer to the internally stored data." alt="" coords="261,59,403,88"/><area shape="rect" id="node7" href="class_c_c_r_t_p_packet.html#ae858fd5b801ead5123fde3fa65f4b993" title="Returns the length of the currently stored data (in bytes)" alt="" coords="241,112,423,141"/><area shape="rect" id="node9" href="class_c_c_r_t_p_packet.html#abbf2536a6c798f5cd6a2f4a54e312f47" title="Returns the currently set port number." alt="" coords="263,165,401,195"/><area shape="rect" id="node11" href="class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="233,219,431,248"/><area shape="rect" id="node13" href="class_c_c_r_t_p_packet.html#a6f016d8169e8513bc31ba0a7f4f0b6f4" title="Returns the length of a sendable data block." alt="" coords="480,245,717,275"/><area shape="rect" id="node16" href="class_c_c_r_t_p_packet.html#aec6700a52ab8a83cb38447c98402b9e3" title="Set the copter channel to send the payload data to." alt="" coords="240,323,424,352"/><area shape="rect" id="node18" href="class_c_c_r_t_p_packet.html#a5be4f08603d3fc9f144afcbbce0e796c" title="Set the copter port to send the payload data to." alt="" coords="252,376,412,405"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_icgraph.png" border="0" usemap="#class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_icgraph" alt=""/></div>
+<map name="class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_icgraph" id="class_c_crazy_radio_ab8c905867ddd38464e308a65af4e2687_icgraph">
+<area shape="rect" id="node3" href="class_c_crazy_radio.html#a7857432d0ec2765f1d315f9dddc39aa1" title="Sends the given packet and waits for a reply." alt="" coords="504,5,712,35"/><area shape="rect" id="node5" href="class_c_crazy_radio.html#ae97930dadd4c09a9faa0b9df38b28ca1" title="Sends out an empty dummy packet." alt="" coords="232,84,456,113"/><area shape="rect" id="node9" href="class_c_crazy_radio.html#afc970245d4013dab9767a99cdfac3040" title="Waits for the next non&#45;empty packet." alt="" coords="248,31,440,60"/><area shape="rect" id="node7" href="class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations." alt="" coords="547,84,669,113"/></map>
 </div>
 </p>
 
@@ -317,6 +514,44 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="afc970245d4013dab9767a99cdfac3040"></a><!-- doxytag: member="CCrazyRadio::waitForPacket" ref="afc970245d4013dab9767a99cdfac3040" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_c_c_r_t_p_packet.html">CCRTPPacket</a> * CCrazyRadio::waitForPacket </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Waits for the next non-empty packet. </p>
+<p>Sends out dummy packets until a reply is non-empty and then returns this reply.</p>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Packet contaning a non-empty reply. </dd></dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_cgraph.png" border="0" usemap="#class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_cgraph" alt=""/></div>
+<map name="class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_cgraph" id="class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_cgraph">
+<area shape="rect" id="node3" href="class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687" title="Sends the given packet&#39;s payload to the copter." alt="" coords="248,192,427,221"/><area shape="rect" id="node5" href="class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="493,5,656,35"/><area shape="rect" id="node7" href="class_c_c_r_t_p_packet.html#a7f69fd021d84553f6882f3c973fce93e" title="Gives out the pointer to the internally stored data." alt="" coords="504,59,645,88"/><area shape="rect" id="node9" href="class_c_c_r_t_p_packet.html#ae858fd5b801ead5123fde3fa65f4b993" title="Returns the length of the currently stored data (in bytes)" alt="" coords="484,112,665,141"/><area shape="rect" id="node11" href="class_c_c_r_t_p_packet.html#abbf2536a6c798f5cd6a2f4a54e312f47" title="Returns the currently set port number." alt="" coords="505,165,644,195"/><area shape="rect" id="node13" href="class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="476,219,673,248"/><area shape="rect" id="node15" href="class_c_c_r_t_p_packet.html#a6f016d8169e8513bc31ba0a7f4f0b6f4" title="Returns the length of a sendable data block." alt="" coords="723,245,960,275"/><area shape="rect" id="node18" href="class_c_c_r_t_p_packet.html#aec6700a52ab8a83cb38447c98402b9e3" title="Set the copter channel to send the payload data to." alt="" coords="483,323,667,352"/><area shape="rect" id="node20" href="class_c_c_r_t_p_packet.html#a5be4f08603d3fc9f144afcbbce0e796c" title="Set the copter port to send the payload data to." alt="" coords="495,376,655,405"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_icgraph.png" border="0" usemap="#class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_icgraph" alt=""/></div>
+<map name="class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_icgraph" id="class_c_crazy_radio_afc970245d4013dab9767a99cdfac3040_icgraph">
+<area shape="rect" id="node3" href="class_c_crazy_radio.html#a7857432d0ec2765f1d315f9dddc39aa1" title="Sends the given packet and waits for a reply." alt="" coords="248,5,456,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/cflie/<a class="el" href="_c_crazy_radio_8h_source.html">CCrazyRadio.h</a></li>
 <li>src/cflie/CCrazyRadio.cpp</li>
@@ -336,7 +571,7 @@ Here is the caller graph for this function:</div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 07:16:28 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 08:32:08 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_crazy_radio.html#a7857432d0ec2765f1d315f9dddc39aa1" title="Sends the given packet and waits for a reply." alt="" coords="504,5,712,35"/>
+<area shape="rect" id="node5" href="$class_c_crazy_radio.html#ae97930dadd4c09a9faa0b9df38b28ca1" title="Sends out an empty dummy packet." alt="" coords="232,84,456,113"/>
+<area shape="rect" id="node9" href="$class_c_crazy_radio.html#afc970245d4013dab9767a99cdfac3040" title="Waits for the next non&#45;empty packet." alt="" coords="248,31,440,60"/>
+<area shape="rect" id="node7" href="$class_c_crazyflie.html#ae0239a20be1dc90ea0588a45cb4a269a" title="Manages internal calculation operations." alt="" coords="547,84,669,113"/>
+</map>

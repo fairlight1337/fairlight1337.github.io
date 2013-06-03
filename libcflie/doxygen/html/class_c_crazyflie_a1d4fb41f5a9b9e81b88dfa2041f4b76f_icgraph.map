@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_crazyflie.html#a3fbc54d5a6cba87da549859513b61a31" title="Report the current battery level." alt="" coords="259,5,421,35"/>
+<area shape="rect" id="node5" href="$class_c_crazyflie.html#a42059530824eeb68364cd977bfb84dbd" title="Returns the current pitch." alt="" coords="280,59,400,88"/>
+<area shape="rect" id="node7" href="$class_c_crazyflie.html#a57ba541cb966937036eeb7ef2109dfe0" title="Returns the current roll." alt="" coords="285,112,395,141"/>
+<area shape="rect" id="node9" href="$class_c_crazyflie.html#a5db5a4b65c5d3fc1092e0ab27d4165f7" title="Returns the current thrust." alt="" coords="277,165,403,195"/>
+<area shape="rect" id="node11" href="$class_c_crazyflie.html#a843d4bc976670b7a416654ff2ca08271" title="Returns the current yaw." alt="" coords="283,219,397,248"/>
+</map>

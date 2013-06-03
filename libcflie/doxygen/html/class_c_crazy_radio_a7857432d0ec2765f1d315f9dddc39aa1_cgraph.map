@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_c_c_r_t_p_packet.html#a61ff522b3397f2e38c6ade082d0b010c" title="Returns the currently set channel number." alt="" coords="749,5,912,35"/>
+<area shape="rect" id="node5" href="$class_c_c_r_t_p_packet.html#abbf2536a6c798f5cd6a2f4a54e312f47" title="Returns the currently set port number." alt="" coords="761,59,900,88"/>
+<area shape="rect" id="node7" href="$class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687" title="Sends the given packet&#39;s payload to the copter." alt="" coords="504,165,683,195"/>
+<area shape="rect" id="node24" href="$class_c_crazy_radio.html#afc970245d4013dab9767a99cdfac3040" title="Waits for the next non&#45;empty packet." alt="" coords="263,164,455,193"/>
+<area shape="rect" id="node10" href="$class_c_c_r_t_p_packet.html#a7f69fd021d84553f6882f3c973fce93e" title="Gives out the pointer to the internally stored data." alt="" coords="760,112,901,141"/>
+<area shape="rect" id="node12" href="$class_c_c_r_t_p_packet.html#ae858fd5b801ead5123fde3fa65f4b993" title="Returns the length of the currently stored data (in bytes)" alt="" coords="740,165,921,195"/>
+<area shape="rect" id="node15" href="$class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="732,269,929,299"/>
+<area shape="rect" id="node17" href="$class_c_c_r_t_p_packet.html#a6f016d8169e8513bc31ba0a7f4f0b6f4" title="Returns the length of a sendable data block." alt="" coords="979,244,1216,273"/>
+<area shape="rect" id="node20" href="$class_c_c_r_t_p_packet.html#aec6700a52ab8a83cb38447c98402b9e3" title="Set the copter channel to send the payload data to." alt="" coords="739,323,923,352"/>
+<area shape="rect" id="node22" href="$class_c_c_r_t_p_packet.html#a5be4f08603d3fc9f144afcbbce0e796c" title="Set the copter port to send the payload data to." alt="" coords="751,376,911,405"/>
+</map>
