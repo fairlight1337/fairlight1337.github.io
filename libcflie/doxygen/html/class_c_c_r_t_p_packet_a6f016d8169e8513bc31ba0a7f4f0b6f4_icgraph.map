@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_c_crazy_radio.html#a9cd3c76f0ff5c4cb3628e7174489da65" title="Sends the given packet&#39;s payload to the copter." alt="" coords="291,5,469,35"/>
+<area shape="rect" id="node3" href="$class_c_c_r_t_p_packet.html#a28168168499f72157e307c8fdc092bb6" title="Prepares a sendable block of data based on the CCRTPPacket details." alt="" coords="292,5,489,35"/>
+<area shape="rect" id="node5" href="$class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687" title="Sends the given packet&#39;s payload to the copter." alt="" coords="539,32,717,61"/>
 </map>

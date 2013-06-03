@@ -66,29 +66,40 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <!-- doxytag: class="TOCElement" -->
-<p>Storage element for TOC item identities.  
+<p>Storage element for logged variable identities.  
  <a href="struct_t_o_c_element.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="_c_crazy_radio_8h_source.html">CCrazyRadio.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="_c_t_o_c_8h_source.html">CTOC.h</a>&gt;</code></p>
 
 <p><a href="struct_t_o_c_element-members.html">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e165ec5c43944c172569733f093e87a"></a><!-- doxytag: member="TOCElement::nIndex" ref="a7e165ec5c43944c172569733f093e87a" args="" -->
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_o_c_element.html#a7e165ec5c43944c172569733f093e87a">nIndex</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">the Numerical index of the TOC item on the copter's internal table <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22e02c3fe82e3b2a6c43e079b86b5d10"></a><!-- doxytag: member="TOCElement::nID" ref="a22e02c3fe82e3b2a6c43e079b86b5d10" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_o_c_element.html#a22e02c3fe82e3b2a6c43e079b86b5d10">nID</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The numerical ID of the log element on the copter's internal table. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adc805c9b399e359970adc3464e11714a"></a><!-- doxytag: member="TOCElement::nType" ref="adc805c9b399e359970adc3464e11714a" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_o_c_element.html#adc805c9b399e359970adc3464e11714a">nType</a></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The (ref) type of the log element. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a850baedf9ca32db223a889e55e2bf0b6"></a><!-- doxytag: member="TOCElement::strGroup" ref="a850baedf9ca32db223a889e55e2bf0b6" args="" -->
 string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_o_c_element.html#a850baedf9ca32db223a889e55e2bf0b6">strGroup</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The string group name of the TOC element. <br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The string group name of the log element. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd75787e09a9cc67145ab04c072c6e13"></a><!-- doxytag: member="TOCElement::strIdentifier" ref="afd75787e09a9cc67145ab04c072c6e13" args="" -->
 string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_t_o_c_element.html#afd75787e09a9cc67145ab04c072c6e13">strIdentifier</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The string identifier of the TOC element. <br/></td></tr>
+<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">The string identifier of the log element. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46869b6d70c8f2a5d0c5be1dd709ae1a"></a><!-- doxytag: member="TOCElement::bIsLogging" ref="a46869b6d70c8f2a5d0c5be1dd709ae1a" args="" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>bIsLogging</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae7e893b9f42dae13fcd5e7e7b6fea3b8"></a><!-- doxytag: member="TOCElement::strValue" ref="ae7e893b9f42dae13fcd5e7e7b6fea3b8" args="" -->
+string&#160;</td><td class="memItemRight" valign="bottom"><b>strValue</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0036d23cb09ef82cfdfc8800953f4190"></a><!-- doxytag: member="TOCElement::dValue" ref="a0036d23cb09ef82cfdfc8800953f4190" args="" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><b>dValue</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a785c282a25a1676c54a4e20fa70fe890"></a><!-- doxytag: member="TOCElement::nValue" ref="a785c282a25a1676c54a4e20fa70fe890" args="" -->
+int&#160;</td><td class="memItemRight" valign="bottom"><b>nValue</b></td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
-<div class="textblock"><p>Storage element for TOC item identities. </p>
+<div class="textblock"><p>Storage element for logged variable identities. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/cflie/<a class="el" href="_c_crazy_radio_8h_source.html">CCrazyRadio.h</a></li>
+<li>include/cflie/<a class="el" href="_c_t_o_c_8h_source.html">CTOC.h</a></li>
 </ul>
 </div>
 <!-- window showing the filter options -->
@@ -105,7 +116,7 @@ string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="st
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 22:54:18 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 07:16:28 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

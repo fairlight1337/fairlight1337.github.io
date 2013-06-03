@@ -97,105 +97,160 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00036"></a>00036 <span class="preprocessor">#include &quot;CCrazyRadio.h&quot;</span>
 <a name="l00037"></a>00037 <span class="preprocessor">#include &quot;CController.h&quot;</span>
 <a name="l00038"></a>00038 <span class="preprocessor">#include &quot;CPController.h&quot;</span>
-<a name="l00039"></a>00039 
-<a name="l00040"></a>00040 <span class="keyword">using namespace </span>std;
-<a name="l00041"></a>00041 
+<a name="l00039"></a>00039 <span class="preprocessor">#include &quot;CTOC.h&quot;</span>
+<a name="l00040"></a>00040 
+<a name="l00041"></a>00041 <span class="keyword">using namespace </span>std;
 <a name="l00042"></a>00042 
-<a name="l00045"></a>00045 <span class="keyword">enum</span> Controller {
-<a name="l00046"></a>00046   CTRL_NONE = 0,
-<a name="l00047"></a>00047   CTRL_P = 1
-<a name="l00048"></a>00048 };
-<a name="l00049"></a>00049 
-<a name="l00055"></a><a class="code" href="class_c_crazyflie.html">00055</a> <span class="keyword">class </span><a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> {
-<a name="l00056"></a>00056  <span class="keyword">private</span>:
-<a name="l00057"></a>00057   <span class="comment">// Variables</span>
-<a name="l00060"></a>00060 <span class="comment"></span>  <a class="code" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle.">CCrazyRadio</a> *m_crRadio;
-<a name="l00062"></a>00062   <span class="keywordtype">int</span> m_nLastRequestedVariableIndex;
-<a name="l00065"></a>00065   <span class="keywordtype">int</span> m_nThrust;
-<a name="l00067"></a>00067   <span class="keywordtype">float</span> m_fRoll;
-<a name="l00070"></a>00070   <span class="keywordtype">float</span> m_fPitch;
-<a name="l00072"></a>00072   <span class="keywordtype">float</span> m_fYaw;
-<a name="l00074"></a>00074   <a class="code" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers.">CController</a> *m_ctrlController;
-<a name="l00077"></a>00077   <span class="keyword">struct </span><a class="code" href="struct_d_s_pose.html" title="Struct describing position and orientation.">DSPose</a> m_dspCurrentPose;
-<a name="l00080"></a>00080   <span class="keyword">struct </span><a class="code" href="struct_d_s_twist.html" title="Struct describing linear and angular twist.">DSTwist</a> m_dstCurrentTwist;
-<a name="l00083"></a>00083   <span class="keyword">struct </span><a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> m_cspDesired;
-<a name="l00084"></a>00084   <span class="keyword">enum</span> Controller m_enumCtrl;
-<a name="l00090"></a>00090   <span class="keywordtype">double</span> m_dSecondsLast;
-<a name="l00091"></a>00091   
-<a name="l00092"></a>00092   <span class="comment">// Control related parameters</span>
-<a name="l00095"></a>00095 <span class="comment"></span>  <span class="keywordtype">float</span> m_fMaxAbsRoll;
-<a name="l00098"></a>00098   <span class="keywordtype">float</span> m_fMaxAbsPitch;
-<a name="l00101"></a>00101   <span class="keywordtype">float</span> m_fMaxYaw;
-<a name="l00103"></a>00103   <span class="keywordtype">int</span> m_nMaxThrust;
-<a name="l00105"></a>00105   <span class="keywordtype">int</span> m_nMinThrust;
-<a name="l00113"></a>00113   <span class="keywordtype">bool</span> m_bControllerIgnoresYaw;
-<a name="l00119"></a>00119   <span class="keywordtype">float</span> m_fArrivalThreshold;
-<a name="l00120"></a>00120 
-<a name="l00121"></a>00121   <span class="comment">// Functions</span>
-<a name="l00127"></a>00127 <span class="comment"></span>  <span class="keywordtype">void</span> resetState();
-<a name="l00136"></a>00136   <span class="keywordtype">double</span> currentTime();
-<a name="l00137"></a>00137   
-<a name="l00138"></a>00138   <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> identityControlSignal();
-<a name="l00139"></a>00139   <span class="keywordtype">void</span> applyControllerResult(<span class="keywordtype">double</span> dElapsedTime);
-<a name="l00140"></a>00140   <span class="keywordtype">void</span> calculatePoseIntegral(<span class="keywordtype">double</span> dElapsedTime);
-<a name="l00141"></a>00141   <span class="keywordtype">void</span> calculateCartesianVelocity();
-<a name="l00142"></a>00142 
-<a name="l00156"></a>00156   <span class="keywordtype">bool</span> sendSetpoint(<span class="keywordtype">float</span> fRoll, <span class="keywordtype">float</span> fPitch, <span class="keywordtype">float</span> fYaw, <span class="keywordtype">short</span> sThrust);
-<a name="l00157"></a>00157 
-<a name="l00158"></a>00158   <span class="keywordtype">void</span> updateTOC();
-<a name="l00159"></a>00159   <span class="keywordtype">void</span> populateTOCElement(<span class="keywordtype">int</span> nIndex);
-<a name="l00160"></a>00160   <span class="keywordtype">void</span> populateNextTOCElement();
-<a name="l00161"></a>00161 
-<a name="l00162"></a>00162   <span class="keywordtype">void</span> populateLOGElement(<span class="keywordtype">int</span> nIndex);
-<a name="l00163"></a>00163   <span class="keywordtype">void</span> populateNextLOGElement();
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 <span class="keyword">enum</span> State {
+<a name="l00045"></a>00045   STATE_ZERO = 0,
+<a name="l00046"></a>00046   STATE_READ_PARAMETERS_TOC = 1,
+<a name="l00047"></a>00047   STATE_READ_LOGS_TOC = 2,
+<a name="l00048"></a>00048   STATE_START_LOGGING = 3,
+<a name="l00049"></a>00049   STATE_ZERO_MEASUREMENTS = 4,
+<a name="l00050"></a>00050   STATE_NORMAL_OPERATION = 5
+<a name="l00051"></a>00051 };
+<a name="l00052"></a>00052 
+<a name="l00055"></a>00055 <span class="keyword">enum</span> Controller {
+<a name="l00056"></a>00056   CTRL_NONE = 0,
+<a name="l00057"></a>00057   CTRL_P = 1
+<a name="l00058"></a>00058 };
+<a name="l00059"></a>00059 
+<a name="l00065"></a><a class="code" href="class_c_crazyflie.html">00065</a> <span class="keyword">class </span><a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a> {
+<a name="l00066"></a>00066  <span class="keyword">private</span>:
+<a name="l00067"></a>00067   <span class="comment">// Variables</span>
+<a name="l00068"></a>00068   <span class="keywordtype">int</span> m_nAckMissTolerance;
+<a name="l00069"></a>00069   <span class="keywordtype">int</span> m_nAckMissCounter;
+<a name="l00072"></a>00072   <a class="code" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle.">CCrazyRadio</a> *m_crRadio;
+<a name="l00074"></a>00074   <span class="keywordtype">int</span> m_nLastRequestedVariableIndex;
+<a name="l00077"></a>00077   <span class="keywordtype">int</span> m_nThrust;
+<a name="l00079"></a>00079   <span class="keywordtype">float</span> m_fRoll;
+<a name="l00082"></a>00082   <span class="keywordtype">float</span> m_fPitch;
+<a name="l00084"></a>00084   <span class="keywordtype">float</span> m_fYaw;
+<a name="l00086"></a>00086   <a class="code" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers.">CController</a> *m_ctrlController;
+<a name="l00089"></a>00089   <span class="keyword">struct </span><a class="code" href="struct_d_s_pose.html" title="Struct describing position and orientation.">DSPose</a> m_dspCurrentPose;
+<a name="l00092"></a>00092   <span class="keyword">struct </span><a class="code" href="struct_d_s_twist.html" title="Struct describing linear and angular twist.">DSTwist</a> m_dstCurrentTwist;
+<a name="l00095"></a>00095   <span class="keyword">struct </span><a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> m_cspDesired;
+<a name="l00096"></a>00096   <span class="keyword">enum</span> Controller m_enumCtrl;
+<a name="l00102"></a>00102   <span class="keywordtype">double</span> m_dSecondsLast;
+<a name="l00103"></a>00103   
+<a name="l00104"></a>00104   <span class="comment">// Control related parameters</span>
+<a name="l00107"></a>00107 <span class="comment"></span>  <span class="keywordtype">float</span> m_fMaxAbsRoll;
+<a name="l00110"></a>00110   <span class="keywordtype">float</span> m_fMaxAbsPitch;
+<a name="l00113"></a>00113   <span class="keywordtype">float</span> m_fMaxYaw;
+<a name="l00115"></a>00115   <span class="keywordtype">int</span> m_nMaxThrust;
+<a name="l00117"></a>00117   <span class="keywordtype">int</span> m_nMinThrust;
+<a name="l00118"></a>00118   <span class="keywordtype">double</span> m_dSendSetpointPeriod;
+<a name="l00119"></a>00119   <span class="keywordtype">double</span> m_dSetpointLastSent;
+<a name="l00120"></a>00120   <span class="keywordtype">bool</span> m_bSendsSetpoints;
+<a name="l00121"></a>00121   <span class="keywordtype">int</span> m_nMeasurementZeroCounter;
+<a name="l00129"></a>00129   <span class="keywordtype">bool</span> m_bControllerIgnoresYaw;
+<a name="l00135"></a>00135   <span class="keywordtype">float</span> m_fArrivalThreshold;
+<a name="l00136"></a>00136   <a class="code" href="class_c_t_o_c.html">CTOC</a> *m_tocParameters;
+<a name="l00137"></a>00137   <a class="code" href="class_c_t_o_c.html">CTOC</a> *m_tocLogs;
+<a name="l00138"></a>00138   <span class="keyword">enum</span> State m_enumState;
+<a name="l00139"></a>00139   <span class="keywordtype">double</span> m_dAccZZero;
+<a name="l00140"></a>00140   
+<a name="l00141"></a>00141   <span class="comment">// Functions</span>
+<a name="l00147"></a>00147 <span class="comment"></span>  <span class="keywordtype">void</span> resetState();
+<a name="l00156"></a>00156   <span class="keywordtype">double</span> currentTime();
+<a name="l00157"></a>00157   
+<a name="l00158"></a>00158   <span class="keyword">struct </span><a class="code" href="struct_d_s_velocity_control_signal.html" title="Struct holding a controller output signal.">DSVelocityControlSignal</a> identityControlSignal();
+<a name="l00159"></a>00159   <span class="keywordtype">void</span> applyControllerResult(<span class="keywordtype">double</span> dElapsedTime);
+<a name="l00160"></a>00160   <span class="keywordtype">void</span> calculatePoseIntegral(<span class="keywordtype">double</span> dElapsedTime);
+<a name="l00161"></a>00161   <span class="keywordtype">void</span> calculateCartesianVelocity(<span class="keywordtype">double</span> dElapsedTime);
+<a name="l00162"></a>00162   <span class="keywordtype">bool</span> readTOCParameters();
+<a name="l00163"></a>00163   <span class="keywordtype">bool</span> readTOCLogs();
 <a name="l00164"></a>00164   
-<a name="l00165"></a>00165   <span class="keywordtype">void</span> updateLogTOC();
-<a name="l00166"></a>00166     
-<a name="l00167"></a>00167  <span class="keyword">public</span>:
-<a name="l00176"></a>00176   <a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>(<a class="code" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle.">CCrazyRadio</a> *crRadio);
-<a name="l00181"></a>00181   ~<a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>();
-<a name="l00182"></a>00182   
-<a name="l00189"></a>00189   <span class="keywordtype">void</span> setThrust(<span class="keywordtype">int</span> <a class="code" href="struct_d_s_velocity_control_signal.html#abd6f4ea33d0ac017a13f13e0530d6f68" title="The amount of thrust to give to the copter controller.">nThrust</a>);
-<a name="l00194"></a>00194   <span class="keywordtype">int</span> thrust();
-<a name="l00195"></a>00195   
-<a name="l00202"></a>00202   <span class="keywordtype">void</span> setRoll(<span class="keywordtype">float</span> fRoll);
-<a name="l00207"></a>00207   <span class="keywordtype">float</span> roll();
-<a name="l00208"></a>00208   
-<a name="l00215"></a>00215   <span class="keywordtype">void</span> setPitch(<span class="keywordtype">float</span> fPitch);
-<a name="l00220"></a>00220   <span class="keywordtype">float</span> pitch();
-<a name="l00221"></a>00221 
-<a name="l00228"></a>00228   <span class="keywordtype">void</span> setYaw(<span class="keywordtype">float</span> fYaw);
-<a name="l00233"></a>00233   <span class="keywordtype">float</span> yaw();
-<a name="l00234"></a>00234   
-<a name="l00248"></a>00248   <span class="keywordtype">bool</span> cycle();
-<a name="l00257"></a>00257   <span class="keywordtype">bool</span> copterInRange();
-<a name="l00258"></a>00258   
-<a name="l00263"></a>00263   <span class="keywordtype">void</span> disableController();
-<a name="l00268"></a>00268   <span class="keywordtype">void</span> setPController(<span class="keywordtype">float</span> fPGain);
-<a name="l00269"></a>00269   
-<a name="l00279"></a>00279   <span class="keywordtype">void</span> setDesiredSetPoint(<span class="keyword">struct</span> <a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> cspDesired);
+<a name="l00178"></a>00178   <span class="keywordtype">bool</span> sendSetpoint(<span class="keywordtype">float</span> fRoll, <span class="keywordtype">float</span> fPitch, <span class="keywordtype">float</span> fYaw, <span class="keywordtype">short</span> sThrust);
+<a name="l00179"></a>00179 
+<a name="l00180"></a>00180   <span class="keywordtype">void</span> updateTOC();
+<a name="l00181"></a>00181   <span class="keywordtype">void</span> populateTOCElement(<span class="keywordtype">int</span> nIndex);
+<a name="l00182"></a>00182   <span class="keywordtype">void</span> populateNextTOCElement();
+<a name="l00183"></a>00183 
+<a name="l00184"></a>00184   <span class="keywordtype">void</span> populateLOGElement(<span class="keywordtype">int</span> nIndex);
+<a name="l00185"></a>00185   <span class="keywordtype">void</span> populateNextLOGElement();
+<a name="l00186"></a>00186   
+<a name="l00187"></a>00187   <span class="keywordtype">void</span> updateLogTOC();
+<a name="l00188"></a>00188     
+<a name="l00189"></a>00189  <span class="keyword">public</span>:
+<a name="l00198"></a>00198   <a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>(<a class="code" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle.">CCrazyRadio</a> *crRadio);
+<a name="l00203"></a>00203   ~<a class="code" href="class_c_crazyflie.html" title="Crazyflie Nano convenience controller class.">CCrazyflie</a>();
+<a name="l00204"></a>00204   
+<a name="l00211"></a>00211   <span class="keywordtype">void</span> setThrust(<span class="keywordtype">int</span> <a class="code" href="struct_d_s_velocity_control_signal.html#abd6f4ea33d0ac017a13f13e0530d6f68" title="The amount of thrust to give to the copter controller.">nThrust</a>);
+<a name="l00216"></a>00216   <span class="keywordtype">int</span> thrust();
+<a name="l00217"></a>00217   
+<a name="l00224"></a>00224   <span class="keywordtype">void</span> setRoll(<span class="keywordtype">float</span> fRoll);
+<a name="l00229"></a>00229   <span class="keywordtype">float</span> roll();
+<a name="l00230"></a>00230   
+<a name="l00237"></a>00237   <span class="keywordtype">void</span> setPitch(<span class="keywordtype">float</span> fPitch);
+<a name="l00242"></a>00242   <span class="keywordtype">float</span> pitch();
+<a name="l00243"></a>00243 
+<a name="l00250"></a>00250   <span class="keywordtype">void</span> setYaw(<span class="keywordtype">float</span> fYaw);
+<a name="l00255"></a>00255   <span class="keywordtype">float</span> yaw();
+<a name="l00256"></a>00256   
+<a name="l00270"></a>00270   <span class="keywordtype">bool</span> cycle();
+<a name="l00279"></a>00279   <span class="keywordtype">bool</span> copterInRange();
 <a name="l00280"></a>00280   
-<a name="l00288"></a>00288   <span class="keywordtype">double</span> distanceBetweenPositions(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition1, <span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition2);
-<a name="l00294"></a>00294   <span class="keywordtype">double</span> distanceToPosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition);
-<a name="l00300"></a>00300   <span class="keywordtype">double</span> distanceToDesiredPosition();
-<a name="l00301"></a>00301   
-<a name="l00310"></a>00310   <span class="keywordtype">void</span> goToRelativePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvRelative);
-<a name="l00325"></a>00325   <span class="keywordtype">void</span> goToAbsolutePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvAbsolute);
-<a name="l00326"></a>00326   
-<a name="l00336"></a>00336   <span class="keywordtype">bool</span> isAtDesiredPosition();
-<a name="l00349"></a>00349   <span class="keywordtype">bool</span> isAtDesiredPosition(<span class="keywordtype">float</span> fThreshold);
-<a name="l00350"></a>00350   
-<a name="l00361"></a>00361   <span class="keywordtype">void</span> setArrivalThreshold(<span class="keywordtype">float</span> fArrivalThreshold);
-<a name="l00366"></a>00366   <span class="keywordtype">float</span> arrivalThreshold();
-<a name="l00367"></a>00367   
-<a name="l00372"></a>00372   <span class="keywordtype">void</span> setControllerIgnoresYaw(<span class="keywordtype">bool</span> bControllerIgnoresYaw);
-<a name="l00378"></a>00378   <span class="keywordtype">bool</span> controllerIgnoresYaw();
-<a name="l00379"></a>00379   
-<a name="l00386"></a>00386   <span class="keywordtype">void</span> relocalize();
-<a name="l00387"></a>00387 };
-<a name="l00388"></a>00388 
-<a name="l00389"></a>00389 
-<a name="l00390"></a>00390 <span class="preprocessor">#endif </span><span class="comment">/* __C_CRAZYFLIE_H__ */</span>
+<a name="l00285"></a>00285   <span class="keywordtype">void</span> disableController();
+<a name="l00290"></a>00290   <span class="keywordtype">void</span> setPController(<span class="keywordtype">float</span> fPGain);
+<a name="l00291"></a>00291   
+<a name="l00301"></a>00301   <span class="keywordtype">void</span> setDesiredSetPoint(<span class="keyword">struct</span> <a class="code" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)">DSControlSetPoint</a> cspDesired);
+<a name="l00302"></a>00302   
+<a name="l00310"></a>00310   <span class="keywordtype">double</span> distanceBetweenPositions(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition1, <span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition2);
+<a name="l00316"></a>00316   <span class="keywordtype">double</span> distanceToPosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvPosition);
+<a name="l00322"></a>00322   <span class="keywordtype">double</span> distanceToDesiredPosition();
+<a name="l00323"></a>00323   
+<a name="l00332"></a>00332   <span class="keywordtype">void</span> goToRelativePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvRelative);
+<a name="l00347"></a>00347   <span class="keywordtype">void</span> goToAbsolutePosition(<span class="keyword">struct</span> <a class="code" href="struct_d_s_vector.html" title="Struct describing a R^3 vector.">DSVector</a> dsvAbsolute);
+<a name="l00348"></a>00348   
+<a name="l00358"></a>00358   <span class="keywordtype">bool</span> isAtDesiredPosition();
+<a name="l00371"></a>00371   <span class="keywordtype">bool</span> isAtDesiredPosition(<span class="keywordtype">float</span> fThreshold);
+<a name="l00372"></a>00372   
+<a name="l00383"></a>00383   <span class="keywordtype">void</span> setArrivalThreshold(<span class="keywordtype">float</span> fArrivalThreshold);
+<a name="l00388"></a>00388   <span class="keywordtype">float</span> arrivalThreshold();
+<a name="l00389"></a>00389   
+<a name="l00394"></a>00394   <span class="keywordtype">void</span> setControllerIgnoresYaw(<span class="keywordtype">bool</span> bControllerIgnoresYaw);
+<a name="l00400"></a>00400   <span class="keywordtype">bool</span> controllerIgnoresYaw();
+<a name="l00401"></a>00401   
+<a name="l00408"></a>00408   <span class="keywordtype">void</span> relocalize();
+<a name="l00409"></a>00409 
+<a name="l00410"></a>00410   <span class="keywordtype">bool</span> isInitialized();
+<a name="l00411"></a>00411   
+<a name="l00412"></a>00412   <span class="keywordtype">bool</span> startLogging();
+<a name="l00413"></a>00413   <span class="keywordtype">void</span> addHighSpeedLogging(<span class="keywordtype">string</span> strName);
+<a name="l00414"></a>00414   <span class="keywordtype">void</span> addLowSpeedLogging(<span class="keywordtype">string</span> strName);
+<a name="l00415"></a>00415   
+<a name="l00416"></a>00416   <span class="keywordtype">void</span> setSendSetpoints(<span class="keywordtype">bool</span> bSendSetpoints);
+<a name="l00417"></a>00417   <span class="keywordtype">bool</span> sendsSetpoints();
+<a name="l00418"></a>00418   
+<a name="l00419"></a>00419   <span class="keywordtype">double</span> sensorDoubleValue(<span class="keywordtype">string</span> strName);
+<a name="l00420"></a>00420   <span class="keywordtype">void</span> enableHighSpeedLogging();
+<a name="l00421"></a>00421   <span class="keywordtype">void</span> disableLogging();
+<a name="l00422"></a>00422   
+<a name="l00423"></a>00423   <span class="keywordtype">void</span> enableStabilizerLogging();
+<a name="l00424"></a>00424   <span class="keywordtype">void</span> enableGyroscopeLogging();
+<a name="l00425"></a>00425   <span class="keywordtype">void</span> enableAccelerometerLogging();
+<a name="l00426"></a>00426 
+<a name="l00427"></a>00427   <span class="keywordtype">void</span> disableStabilizerLogging();
+<a name="l00428"></a>00428   <span class="keywordtype">void</span> disableGyroscopeLogging();
+<a name="l00429"></a>00429   <span class="keywordtype">void</span> disableAccelerometerLogging();
+<a name="l00430"></a>00430   
+<a name="l00431"></a>00431   <span class="keywordtype">void</span> enableBatteryLogging();
+<a name="l00432"></a>00432   <span class="keywordtype">void</span> disableBatteryLogging();
+<a name="l00433"></a>00433   
+<a name="l00434"></a>00434   <span class="keywordtype">bool</span> stopLogging();
+<a name="l00435"></a>00435   <span class="keywordtype">double</span> batteryLevel();
+<a name="l00436"></a>00436   
+<a name="l00437"></a>00437   <span class="keywordtype">void</span> enableMagnetometerLogging();
+<a name="l00438"></a>00438   <span class="keywordtype">void</span> disableMagnetometerLogging();
+<a name="l00439"></a>00439 
+<a name="l00440"></a>00440   <span class="keywordtype">void</span> enableAltimeterLogging();
+<a name="l00441"></a>00441   <span class="keywordtype">void</span> disableAltimeterLogging();
+<a name="l00442"></a>00442 };
+<a name="l00443"></a>00443 
+<a name="l00444"></a>00444 
+<a name="l00445"></a>00445 <span class="preprocessor">#endif </span><span class="comment">/* __C_CRAZYFLIE_H__ */</span>
 </pre></div></div>
 </div>
 <!-- window showing the filter options -->
@@ -212,7 +267,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 22:54:18 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 07:16:28 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

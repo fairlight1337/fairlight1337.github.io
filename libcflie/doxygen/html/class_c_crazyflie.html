@@ -75,7 +75,7 @@ Collaboration diagram for CCrazyflie:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_crazyflie__coll__graph.png" border="0" usemap="#_c_crazyflie_coll__map" alt="Collaboration graph"/></div>
 <map name="_c_crazyflie_coll__map" id="_c_crazyflie_coll__map">
-<area shape="rect" id="node2" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="5,101,139,131"/><area shape="rect" id="node4" href="struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="223,5,300,35"/><area shape="rect" id="node8" href="struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="529,101,601,131"/><area shape="rect" id="node15" href="struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="288,101,357,131"/><area shape="rect" id="node6" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle." alt="" coords="163,101,264,131"/><area shape="rect" id="node10" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="455,5,559,35"/><area shape="rect" id="node13" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="408,101,496,131"/></map>
+<area shape="rect" id="node2" href="struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="192,101,325,131"/><area shape="rect" id="node4" href="struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="320,5,397,35"/><area shape="rect" id="node11" href="struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="349,101,421,131"/><area shape="rect" id="node18" href="struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="607,101,676,131"/><area shape="rect" id="node6" href="class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle." alt="" coords="5,5,107,35"/><area shape="rect" id="node8" href="class_c_t_o_c.html" title="CTOC" alt="" coords="103,101,161,131"/><area shape="rect" id="node13" href="struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="543,5,647,35"/><area shape="rect" id="node16" href="class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="473,101,561,131"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 
 <p><a href="class_c_crazyflie-members.html">List of all members.</a></p>
@@ -136,6 +136,52 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals whether or not the yaw control is ignored in controllers.  <a href="#a49ca10991310aefaabf622a276d70e5e"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_crazyflie.html#abd473cda70c8d18da37d69252dc2a188">relocalize</a> ()</td></tr>
 <tr><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the current pose to the origin pose.  <a href="#abd473cda70c8d18da37d69252dc2a188"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f174585c4bcd8933f47917c1ec68e2c"></a><!-- doxytag: member="CCrazyflie::isInitialized" ref="a1f174585c4bcd8933f47917c1ec68e2c" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isInitialized</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acea921d7d7a4802255da16b3b91797bf"></a><!-- doxytag: member="CCrazyflie::startLogging" ref="acea921d7d7a4802255da16b3b91797bf" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>startLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b6698da9328cd9054e2c59a73bb34fb"></a><!-- doxytag: member="CCrazyflie::addHighSpeedLogging" ref="a2b6698da9328cd9054e2c59a73bb34fb" args="(string strName)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addHighSpeedLogging</b> (string strName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfc80a23816dd32fad52e86f470438ed"></a><!-- doxytag: member="CCrazyflie::addLowSpeedLogging" ref="abfc80a23816dd32fad52e86f470438ed" args="(string strName)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>addLowSpeedLogging</b> (string strName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf020f22f2ced01699d4dc125e71f4f4"></a><!-- doxytag: member="CCrazyflie::setSendSetpoints" ref="aaf020f22f2ced01699d4dc125e71f4f4" args="(bool bSendSetpoints)" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setSendSetpoints</b> (bool bSendSetpoints)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56a9dc574f082df40278c03cfda715fc"></a><!-- doxytag: member="CCrazyflie::sendsSetpoints" ref="a56a9dc574f082df40278c03cfda715fc" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>sendsSetpoints</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d4fb41f5a9b9e81b88dfa2041f4b76f"></a><!-- doxytag: member="CCrazyflie::sensorDoubleValue" ref="a1d4fb41f5a9b9e81b88dfa2041f4b76f" args="(string strName)" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><b>sensorDoubleValue</b> (string strName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a011460a581cf28a5f4bc4abf9b9e06a7"></a><!-- doxytag: member="CCrazyflie::enableHighSpeedLogging" ref="a011460a581cf28a5f4bc4abf9b9e06a7" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableHighSpeedLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a176ea80e51e5a85fa3144a8ee36572a5"></a><!-- doxytag: member="CCrazyflie::disableLogging" ref="a176ea80e51e5a85fa3144a8ee36572a5" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a778634778e113918ab95e74062341d68"></a><!-- doxytag: member="CCrazyflie::enableStabilizerLogging" ref="a778634778e113918ab95e74062341d68" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableStabilizerLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45cf67191a1d2bf2ba010b01ad77a2a7"></a><!-- doxytag: member="CCrazyflie::enableGyroscopeLogging" ref="a45cf67191a1d2bf2ba010b01ad77a2a7" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableGyroscopeLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d14ceab7e49fe9496128d6deee0b5b7"></a><!-- doxytag: member="CCrazyflie::enableAccelerometerLogging" ref="a7d14ceab7e49fe9496128d6deee0b5b7" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableAccelerometerLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3119ec47087b6000444245f6c5c76b7f"></a><!-- doxytag: member="CCrazyflie::disableStabilizerLogging" ref="a3119ec47087b6000444245f6c5c76b7f" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableStabilizerLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24f083f517a97c0a7da90f2a9ed4a349"></a><!-- doxytag: member="CCrazyflie::disableGyroscopeLogging" ref="a24f083f517a97c0a7da90f2a9ed4a349" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableGyroscopeLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58abb10a48a23fe1ffa0d3be26b5f451"></a><!-- doxytag: member="CCrazyflie::disableAccelerometerLogging" ref="a58abb10a48a23fe1ffa0d3be26b5f451" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableAccelerometerLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbf11e02f8cc37d306e36a6989f4eeaa"></a><!-- doxytag: member="CCrazyflie::enableBatteryLogging" ref="acbf11e02f8cc37d306e36a6989f4eeaa" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableBatteryLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada810f9f839e82737c9d53ee6e10e124"></a><!-- doxytag: member="CCrazyflie::disableBatteryLogging" ref="ada810f9f839e82737c9d53ee6e10e124" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableBatteryLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9cc088474f81079743c7399a7305faa"></a><!-- doxytag: member="CCrazyflie::stopLogging" ref="af9cc088474f81079743c7399a7305faa" args="()" -->
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>stopLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fbc54d5a6cba87da549859513b61a31"></a><!-- doxytag: member="CCrazyflie::batteryLevel" ref="a3fbc54d5a6cba87da549859513b61a31" args="()" -->
+double&#160;</td><td class="memItemRight" valign="bottom"><b>batteryLevel</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5971eea4991ae79c9bcc9354ea6208df"></a><!-- doxytag: member="CCrazyflie::enableMagnetometerLogging" ref="a5971eea4991ae79c9bcc9354ea6208df" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableMagnetometerLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae64229a4a32c34b3befdc5fa1937bb78"></a><!-- doxytag: member="CCrazyflie::disableMagnetometerLogging" ref="ae64229a4a32c34b3befdc5fa1937bb78" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableMagnetometerLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af24ad0ae3664ab4486af1f063ed9f1fb"></a><!-- doxytag: member="CCrazyflie::enableAltimeterLogging" ref="af24ad0ae3664ab4486af1f063ed9f1fb" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>enableAltimeterLogging</b> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aca3104ba3c43801d11a8c71878b7c7"></a><!-- doxytag: member="CCrazyflie::disableAltimeterLogging" ref="a0aca3104ba3c43801d11a8c71878b7c7" args="()" -->
+void&#160;</td><td class="memItemRight" valign="bottom"><b>disableAltimeterLogging</b> ()</td></tr>
 </table>
 <hr/><a name="details" id="details"></a><h2>Detailed Description</h2>
 <div class="textblock"><p>Crazyflie Nano convenience controller class. </p>
@@ -261,15 +307,6 @@ Here is the caller graph for this function:</div>
 <p>Returns whether the radio connection to the copter is currently active.</p>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Returns 'true' is the copter is in range and radio communication works, and 'false' if the copter is either out of range or is switched off. </dd></dl>
 
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="class_c_crazyflie_a6ebb6a13c7fbc350fcf15583b7345e19_cgraph.png" border="0" usemap="#class_c_crazyflie_a6ebb6a13c7fbc350fcf15583b7345e19_cgraph" alt=""/></div>
-<map name="class_c_crazyflie_a6ebb6a13c7fbc350fcf15583b7345e19_cgraph" id="class_c_crazyflie_a6ebb6a13c7fbc350fcf15583b7345e19_cgraph">
-<area shape="rect" id="node3" href="class_c_crazy_radio.html#a503449d14ef7d2f3c63ed3a8f922bd9e" title="Whether or not the copter is answering sent packets." alt="" coords="233,5,417,35"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ae0239a20be1dc90ea0588a45cb4a269a"></a><!-- doxytag: member="CCrazyflie::cycle" ref="ae0239a20be1dc90ea0588a45cb4a269a" args="()" -->
@@ -295,7 +332,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph.png" border="0" usemap="#class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph" alt=""/></div>
 <map name="class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph" id="class_c_crazyflie_ae0239a20be1dc90ea0588a45cb4a269a_cgraph">
-<area shape="rect" id="node3" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809" title="Whether or not the USB connection is still operational." alt="" coords="176,5,325,35"/></map>
+<area shape="rect" id="node3" href="class_c_crazy_radio.html#a503449d14ef7d2f3c63ed3a8f922bd9e" title="Whether or not the copter is answering sent packets." alt="" coords="177,5,361,35"/><area shape="rect" id="node5" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809" title="Whether or not the USB connection is still operational." alt="" coords="195,59,344,88"/></map>
 </div>
 </p>
 
@@ -927,7 +964,7 @@ Here is the call graph for this function:</div>
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 22:54:18 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 07:16:28 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>

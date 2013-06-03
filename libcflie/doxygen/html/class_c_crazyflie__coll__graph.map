@@ -1,9 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node2" href="$struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="5,101,139,131"/>
-<area shape="rect" id="node4" href="$struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="223,5,300,35"/>
-<area shape="rect" id="node8" href="$struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="529,101,601,131"/>
-<area shape="rect" id="node15" href="$struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="288,101,357,131"/>
-<area shape="rect" id="node6" href="$class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle." alt="" coords="163,101,264,131"/>
-<area shape="rect" id="node10" href="$struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="455,5,559,35"/>
-<area shape="rect" id="node13" href="$class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="408,101,496,131"/>
+<area shape="rect" id="node2" href="$struct_d_s_control_set_point.html" title="Set point struct for the client library controller(s)" alt="" coords="192,101,325,131"/>
+<area shape="rect" id="node4" href="$struct_d_s_vector.html" title="Struct describing a R^3 vector." alt="" coords="320,5,397,35"/>
+<area shape="rect" id="node11" href="$struct_d_s_twist.html" title="Struct describing linear and angular twist." alt="" coords="349,101,421,131"/>
+<area shape="rect" id="node18" href="$struct_d_s_pose.html" title="Struct describing position and orientation." alt="" coords="607,101,676,131"/>
+<area shape="rect" id="node6" href="$class_c_crazy_radio.html" title="Communication class to connect to and communicate via the CrazyRadio USB dongle." alt="" coords="5,5,107,35"/>
+<area shape="rect" id="node8" href="$class_c_t_o_c.html" title="CTOC" alt="" coords="103,101,161,131"/>
+<area shape="rect" id="node13" href="$struct_d_s_orientation.html" title="Struct describing a R^3 orientation." alt="" coords="543,5,647,35"/>
+<area shape="rect" id="node16" href="$class_c_controller.html" title="Basic controller superclass supplying variables and functions valid for all controllers." alt="" coords="473,101,561,131"/>
 </map>

@@ -1,3 +1,4 @@
 <map id="G" name="G">
-<area shape="rect" id="node3" href="$class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809" title="Whether or not the USB connection is still operational." alt="" coords="176,5,325,35"/>
+<area shape="rect" id="node3" href="$class_c_crazy_radio.html#a503449d14ef7d2f3c63ed3a8f922bd9e" title="Whether or not the copter is answering sent packets." alt="" coords="177,5,361,35"/>
+<area shape="rect" id="node5" href="$class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809" title="Whether or not the USB connection is still operational." alt="" coords="195,59,344,88"/>
 </map>

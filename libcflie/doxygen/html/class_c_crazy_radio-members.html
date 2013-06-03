@@ -66,28 +66,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 This is the complete list of members for <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>, including all inherited members.<table>
   <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a503449d14ef7d2f3c63ed3a8f922bd9e">ackReceived</a>()</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a80f4d867e098acd0095501f0ef563a7f">CCrazyRadio</a>(string strRadioIdentifier)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>countLOGElements</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>logElementPopulated</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>loggingVariableCount</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>logParameterCount</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>nextLogVarID</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a51b69a2e3af83755589aa5781a4d2d57">parameterCount</a>()</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>populatesLOGCache</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>populatesTOCCache</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>popLoggingPackets</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#ad1e3c51f6e3f2cdd146fde6760a4fa87">power</a>()</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a9cd3c76f0ff5c4cb3628e7174489da65">sendPacket</a>(CCRTPPacket *crtpSend)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>setLogElementPopulated</b>(bool bLogElementPopulated) (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>setLoggingVariableCount</b>(int nLoggingVariableCount) (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#aa42e0623b6b4de4f522e158723353ffa">setParameterCount</a>(int nParameterCount)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>setPopulatesLOGCache</b>(bool bPopulatesLOGCache) (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>setPopulatesTOCCache</b>(bool bPopulatesTOCCache) (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>sendAndReceive</b>(CCRTPPacket *crtpSend, bool bDeleteAfterwards=false) (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>sendAndReceive</b>(CCRTPPacket *crtpSend, int nPort, int nChannel, bool bDeleteAfterwards=true, int nRetries=10, int nMicrosecondsWait=100) (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>sendDummyPacket</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#ab8c905867ddd38464e308a65af4e2687">sendPacket</a>(CCRTPPacket *crtpSend, bool bDeleteAfterwards=false)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a51a89fcafff3e246209b4aecb00c2730">setPower</a>(enum Power enumPower)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>setUpdatesLogParameterCount</b>(bool bUpdatesLogParameterCount) (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#ab1f13389b873821a0d5eaa4824b84837">setUpdatesParameterCount</a>(bool bUpdatesParameterCount)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a0dd3f073f2b45ddde7ec91fd8fb741b5">startRadio</a>()</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td><b>updatesLogParameterCount</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a065a7c864767871066715b24bec77dd3">updatesParameterCount</a>()</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a67274ed88cec66eebc5f74ec6f24a809">usbOK</a>()</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>waitForPacket</b>() (defined in <a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a>)</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="class_c_crazy_radio.html#a73a061488876de78911a2165b3be1481">~CCrazyRadio</a>()</td><td><a class="el" href="class_c_crazy_radio.html">CCrazyRadio</a></td><td></td></tr>
 </table></div>
 <!-- window showing the filter options -->
@@ -104,7 +92,7 @@ This is the complete list of members for <a class="el" href="class_c_crazy_radio
 </iframe>
 </div>
 
-<hr class="footer"/><address class="footer"><small>Generated on Wed May 29 2013 22:54:18 for libcflie by&#160;
+<hr class="footer"/><address class="footer"><small>Generated on Mon Jun 3 2013 07:16:28 for libcflie by&#160;
 <a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.4 </small></address>
 </body>
